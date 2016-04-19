@@ -214,7 +214,10 @@ section {
 	padding: 0;
 }
 
-
+/*text box*/
+.text-container {
+	
+}
 
 /* Anchor span for aligning top of the div with menu bar */
 .anchor{
