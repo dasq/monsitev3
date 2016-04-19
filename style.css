@@ -63,6 +63,7 @@ img {
 /* Header parameter to fully display Parallax */
 header { height:530px; 
 background-image:url("img/unnamed.jpg");
+background-size:cover;
 }
 
 
@@ -90,11 +91,6 @@ right: 15px
 
 #social a {opacity:0.5;}
 #social a:hover {opacity:1;}
-
-/* Size of the content boxes */
-section {
-	height: 600px;
-}
 
 /* Parameters of the menu */
 h1 {
@@ -183,6 +179,42 @@ section {
 	height:400px;
 	width:100%;
 }
+
+#slide-1{
+	background:url("img/slide/Wakatipu.jpg") 0 no-repeat fixed;
+	background-size:cover;
+	color: white;
+	height: 400px;
+	margin: 0 auto;
+	padding: 0;
+}
+#slide-2{
+	background:url("img/slide/Mosquee.jpg") 0 no-repeat fixed;
+	background-size:cover;
+	color: white;
+	height: 400px;
+	margin: 0 auto;
+	padding: 0;
+}
+#slide-3{
+	background:url("img/slide/Tongariro.jpg") 0 no-repeat fixed;
+	background-size:cover;
+	color: white;
+	height: 400px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#slide-4{
+	background:url("img/slide/SandyBay.jpg") 0 no-repeat fixed;
+	background-size:cover;
+	color: white;
+	height: 400px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+
 
 /* Anchor span for aligning top of the div with menu bar */
 .anchor{
