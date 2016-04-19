@@ -6,7 +6,7 @@ function jsUpdateSize(){
 							 
 				var heightBanner = height - 60;
 				//change the value of the height
-				$("#header").css({"height": heightBanner,}); 
+				$("header").css({"height": heightBanner,}); 
 			};
 			window.onload = jsUpdateSize;       // When the page first loads
 			window.onresize = jsUpdateSize;     // When the browser changes size

@@ -61,7 +61,9 @@ img {
 }
 
 /* Header parameter to fully display Parallax */
-#header { height:530px; }
+header { height:530px; 
+background-image:url("img/unnamed.jpg");
+}
 
 
 /* Parameters of the social icons*/
@@ -276,70 +278,6 @@ font-size: 16px;
 
 }
 
-/* Contact form display */
-#contact {  overflow: auto;}
-#contact form {width:410px; float:left;}
-#contact form span {
-  display:block;
-  float:left;
-  width:100px;
-  padding-top:5px;
-  font: 16px Roboto,'Source Sans Pro', Georgia, serif;
-}
-#contact form input {
-  float:left;
-  width:255px;
-  border:0px;
-  color:#5C1416;
-  padding:10px 10px 10px 30px;
-  font: 14px Roboto,'Source Sans Pro', Verdana, Helvetica, sans-serif;
-  margin-bottom:10px;
-}
-#contact form textarea {
-  float:left;
-  border:0px;
-  width:255px;
-  height:140px;
-  padding:10px 10px 10px 30px;
-  font: 14px Roboto,'Source Sans Pro', Verdana, Helvetica, sans-serif;
-  color:#5C1416;
-  resize: none;
-}
-#contact form input.name {
-  background:#F0D4AE url("img/contact/name.png") no-repeat 10px 8px;
-}
-#contact form input.email {
-  background:#F0D4AE url("img/contact/mail.png") no-repeat 10px 9px;
-}
-#contact form input.captcha {
-  background:#F0D4AE url("img/contact/captcha.png") no-repeat 10px 9px;
-}
-#contact form textarea.message {
-  background:#F0D4AE url("img/contact/message.png") no-repeat 10px 8px;
-}
-#contact form input.submit {
-  cursor: pointer;
-  width:85px;
-  height:30px;
-  float:right;
-  padding:0px 0px 5px 0px;
-  margin:10px 16px 0px 0px;
-  background:#5C1416;
-  color:#F0D4AE;
-  font: 20px Amatic,'Source Sans Pro', Georgia, serif;
-}
-#contact form input.submit:hover{font-size:22px;}
-#contact #captcha span{
-  width: 44px;
-}
-#contact #captcha input{
-  background: url("img/contact/captcha.png") no-repeat scroll 0 0 transparent;
-  margin: 5px 0 0;
-  padding: 0;
-  border: medium none;
-  cursor: pointer;
-  width: 15px;
-}
 
 
 /* LAYOUT */
