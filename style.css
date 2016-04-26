@@ -3,7 +3,6 @@
 @font-face{font-family: Amatic; src: url("fonts/Amatic/Amatic-Bold.ttf");}
 @font-face{font-family: Roboto; src: url("fonts/Roboto/Roboto-Regular.ttf");}
 @font-face{font-family: AmaticRegular; src: url("fonts/Amatic/AmaticSC-Regular.ttf");}
-@font-face{font-family: AirStream; src: url("fonts/Airstream.ttf");}
 
 
 /* General body paramters */
@@ -15,6 +14,7 @@ body {
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
 }
+p{margin:0;}
 
 /* Title parameters */
 
@@ -23,12 +23,12 @@ h2 {
 	font-family: Amatic,'Source Sans Pro', sans-serif;
 	font-weight: normal;
 	font-size: 100px;
-	text-align: left;
+	text-align: center;
 	color: #5C1417;
 	margin: 0;
 	padding: 0;
-	padding-bottom: 30px;
-	padding-top:10px;
+	margin-bottom: 60px;
+	margin-top:10px;
 }
 
 h3 {
@@ -40,18 +40,15 @@ h3 {
 	color: #5C1417;
 	margin: 0;
 	padding: 0;
-	padding-bottom: 10px;
-	padding-top:10px;
+	margin-bottom: 10px;
+	margin-top:10px;
 }
-h3 span {font-family: AmaticRegular,'Source Sans Pro', sans-serif;font-weight:550;}
 
-/* !!!!!!!!!!!!!!!!!!!!!                ISOU <3 : Colors of all the links in the website (except the ones specificied like the links in the menu                  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /* General links parameters */
-a { color: #046F80; opacity:1; font-family: Roboto,'Source Sans Pro', sans-serif; border-bottom: 0px none; text-decoration:none; }
-a:active { color: #0a9076; opacity:1; border-bottom: 2px solid #fff; }
-a:hover { color: #0a9076; opacity:1; border-bottom: 0px none;  }
-a:visited { color: #046F80; opacity:0.6; font-family: Roboto,'Source Sans Pro', sans-serif; border-bottom: 0px none; text-decoration:none;} 
-/* !!!!!!!!!!!!!!!!!!!!!                ISOU <3 : END                  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+a { color: #0a9076; opacity:1; font-family: Roboto,'Source Sans Pro', sans-serif; border-bottom: 0px none; text-decoration:none; }
+a:active { color: #0DC3A0; opacity:1; border-bottom: 2px solid #fff; }
+a:hover { color: #0DC3A0; opacity:1; border-bottom: 0px none;  }
+a:visited { color: #0a9076; opacity:0.6; font-family: Roboto,'Source Sans Pro', sans-serif; border-bottom: 0px none; text-decoration:none;} 
 
 /* Image parameters to fully display */
 img {
@@ -108,7 +105,7 @@ h1 {
 
 #brand-link { position: absolute; vertical-align: top; }
 
-#menu #brand {float:left; height:55px; width:auto; opacity:1; z-index:1; margin: 2px 20px auto 0px ; }
+#menu #brand {float:left; height:55px; width:auto; opacity:1; z-index:1; margin: 2px 40px auto 30px ; }
 
 #menu-container{
 	height:60px;
@@ -118,9 +115,7 @@ h1 {
 }
 
 #menu {
-	/* !!!!!!!!!!!!!!!!!!!!!                ISOU <3 : Color of the bar menu                  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 	background-color: #540B0F;
-	/* !!!!!!!!!!!!!!!!!!!!!                ISOU <3 : End of the color of the bar menu                  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 	opacity:0.95;
 	height: 60px;
 	padding: 0 20px 0 20px;
@@ -152,7 +147,6 @@ nav li{
 	margin-right: 1%;
 }
 
-/* !!!!!!!!!!!!!!!!!!!!!                ISOU <3 : Colors of the menu titles                   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /* General parameters of the menu titles */
 #menu-container #menu nav ul li a:link { color: #FFF; opacity:1; font-size: 26px; font-family: Amatic,'Source Sans Pro', sans-serif; border-bottom: 0px none; text-decoration:none; }
 /*  Parameters of the menu titles when the mouse is over the title */
@@ -218,8 +212,7 @@ section {
 -webkit-border-radius:4px;
 border-radius:4px;
 border: 2px solid #ffffff;*/
-	
-	
+
 }
 
 /* Anchor span for aligning top of the div with menu bar */
@@ -234,14 +227,14 @@ border: 2px solid #ffffff;*/
 /*Display parameters of the content boxes*/
 .container{
 	color: #5C1417;
-	background-image: url("img/background/subtle-light-grunge-texture-22-1560x2080.jpg");
+	background-image: url("img/background/content-bg.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-color: #F0D4AE;	
+	background-color: white;	
 	height: auto;
 	width: 100%;
 	margin: 0;
-	padding: 0px 40px 20px 140px;
+	padding: 50px 80px 80px 80px;
 	position:relative;
 	margin-top: 0px;
 	text-align: left;
@@ -260,13 +253,13 @@ border: 2px solid #ffffff;*/
 .box-about {
 	height:auto;
 	width:100%;
-	background-image: url("img/Western-Farid.png");
-	background-size: 600px;
+	background-image: url("img/unnamed-guy.png");
+	background-size: 400px;
 	background-position: right bottom;
 	background-repeat: no-repeat;
 	position: relative;
 	}
-#about p{ width:55%; height:auto; }
+#about p{ width:45%; height:auto; }
 
 #footnote {
 height: auto;
@@ -287,7 +280,7 @@ font-size: 16px;
 #contact-fb {width: 25%;float:left;}
 #contact-newsletter {width: 25%;display:inline-block;}
 #contact-other {width: 25%;float:right;}
-#contact-fb a {padding-bottom:10px; clear:both; background-color: #0A9076; border: 0 none; border-radius:4px; color: white; cursor: pointer; display: inline-block; font-size:15px; height: 32px; line-height: 32px; margin: 0 5px 10px 0; padding:0; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: 40%;}
+#contact-fb a {padding-bottom:10px; clear:both; background-color: #0A9076; border: 0 none; border-radius:4px; color: white; cursor: pointer; display: inline-block; font-size:15px; height: 32px; line-height: 32px; margin: 10px 5px 10px 0; padding:0; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: 40%;}
 #contact-fb a:hover {background-color:#0DC3A0;font-size:16px;}
 
 /* MailChimp Form */
@@ -311,7 +304,10 @@ font-size: 16px;
 	-ms-box-shadow: 0 0 65px #cdbe9f inset, 0 0 20px #beae8c inset, 0 0 5px #816f47;
 	-o-box-shadow: 0 0 65px #cdbe9f inset, 0 0 20px #beae8c inset, 0 0 5px #816f47;
 	box-shadow: 0 0 65px #cdbe9f inset, 0 0 20px #beae8c inset, 0 0 5px #816f47;
+	float:left;
+	margin-right: 40px;
 }
+#pictures p {width: 575px; float:right;}
 
 @keyframes slidy {
 
