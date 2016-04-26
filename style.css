@@ -256,9 +256,6 @@ border: 2px solid #ffffff;*/
 #about, #pictures, #music, #tour, #contact {}
 
 #tour { height: auto; }
-#tour table{width:100%; /*background-color:#EB9B60;*/color:#5C1417;border-bottom:1px solid #5C1417;margin-bottom:10px;}
-#tour th{border-bottom:1px solid #5C1417; padding: 4px 0px 4px 0px;}
-#tour td{padding: 4px 2px 4px 0px;}
 
 .box-about {
 	height:auto;
