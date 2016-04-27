@@ -84,7 +84,9 @@ right: 15px
 	margin-right: 0.2%;
 	}
 
-#social img {height: 35px; width:auto; }
+#social img {height: 35px; width:auto; 
+
+}
 
 #social a {opacity:0.5;}
 #social a:hover {opacity:1;}
@@ -99,13 +101,13 @@ h1 {
 	vertical-align: middle;
 	text-align:center;
 	padding:0;
-    margin: 0 auto;
+    margin: auto;
 	font-weight:normal;
 }
 
 #brand-link { position: absolute; vertical-align: top; }
 
-#menu #brand {float:left; height:55px; width:auto; opacity:1; z-index:1; margin: 2px 40px auto 30px ; }
+#menu #brand {float:left; height:55px; width:auto; opacity:1; z-index:1; margin: 2px 20px auto 20px ; }
 
 #menu-container{
 	height:60px;
@@ -118,10 +120,10 @@ h1 {
 	background-color: #540B0F;
 	opacity:0.95;
 	height: 60px;
-	padding: 0 20px 0 20px;
+	margin: 0 20px 0 20px;
 	position: absolute;
 	margin: auto;
-	width: 97.2%;
+	width: 100%;
 	z-index: 1;
 	-moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.9);
 	-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.9);
@@ -246,9 +248,7 @@ border: 2px solid #ffffff;*/
 	box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.9);
 }
 
-#about, #pictures, #music, #tour, #contact {}
-
-#tour { height: auto; }
+#about, #pictures, #music, #tour, #contact {height: auto;}
 
 .box-about {
 	height:auto;
@@ -304,10 +304,10 @@ font-size: 16px;
 	-ms-box-shadow: 0 0 65px #cdbe9f inset, 0 0 20px #beae8c inset, 0 0 5px #816f47;
 	-o-box-shadow: 0 0 65px #cdbe9f inset, 0 0 20px #beae8c inset, 0 0 5px #816f47;
 	box-shadow: 0 0 65px #cdbe9f inset, 0 0 20px #beae8c inset, 0 0 5px #816f47;
-	float:left;
-	margin-right: 40px;
 }
-#pictures p {width: 575px; float:right;}
+#flickr {height:531px; width:800px;margin: 0 auto;}
+#pictures p {width: auto; max-width: 800px; margin:auto; text-align:center;}
+
 
 @keyframes slidy {
 
@@ -342,7 +342,11 @@ font-size: 16px;
 
 
 /*Soundcloud player*/
-#music iframe{width:50%; height:450px;}
+#player-container{margin:0 auto;text-align:center;width:880px;}
+#music iframe{width:400px; height:450px; }
+.players {margin:0 auto; text-align:center;width:400px;float:left;}
+
+#bandcamp-player {float:left; margin-right:80px;}
 
 /* Page about me*/
 #about-me {height:auto;}
