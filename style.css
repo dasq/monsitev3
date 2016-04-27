@@ -23,6 +23,7 @@ h2 {
 	font-family: Amatic,'Source Sans Pro', sans-serif;
 	font-weight: normal;
 	font-size: 100px;
+	font-style: normal;
 	text-align: center;
 	color: #5C1417;
 	margin: 0;
@@ -34,7 +35,7 @@ h2 {
 h3 {
 	font-family: Amatic,'Source Sans Pro', sans-serif;
 	font-weight: normal;
-	font-style: oblique;
+	font-style: normal;
 	font-size: 40px;
 	text-align: center;
 	color: #5C1417;
@@ -160,6 +161,14 @@ nav li{
 
 nav select {display:none;}
 
+#music:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -180px; 
+  height: 180px; 
+  visibility: hidden; 
+}
+
 /* Size display of the photos*/	
 section {
 	height:400px;
@@ -280,7 +289,7 @@ font-size: 16px;
 #contact-fb {width: 25%;float:left;}
 #contact-newsletter {width: 25%;display:inline-block;}
 #contact-other {width: 25%;float:right;}
-#contact-fb a {padding-bottom:10px; clear:both; background-color: #0A9076; border: 0 none; border-radius:4px; color: white; cursor: pointer; display: inline-block; font-size:15px; height: 32px; line-height: 32px; margin: 10px 5px 10px 0; padding:0; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: 40%;}
+#contact-fb a {padding-bottom:10px; clear:both; background-color: #0A9076; border: 0 none; border-radius:4px; color: white; cursor: pointer; display: inline-block; font-size:15px; height: 32px; line-height: 32px; margin: 10px 5px 10px 0; padding:0; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: 50%;}
 #contact-fb a:hover {background-color:#0DC3A0;font-size:16px;}
 
 /* MailChimp Form */
