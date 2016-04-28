@@ -1,0 +1,28 @@
+.Wakatipu, .Mosquee, .Tongariro, .SandyBay{
+	background: url(sprites.png) no-repeat;
+}
+
+.Wakatipu{
+	background-position: 0 0;
+	width: 1625px;
+	height: 1080px;
+}
+
+.Mosquee{
+	background-position: 0 -1083px ;
+	width: 1625px;
+	height: 1080px;
+}
+
+.Tongariro{
+	background-position: 0 -2170px ;
+	width: 1625px;
+	height: 1080px;
+}
+
+.SandyBay{
+	background-position: 0 -3255px ;
+	width: 1506px;
+	height: 1080px;
+}
+

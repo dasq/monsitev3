@@ -179,11 +179,27 @@ nav select {display:none;}
 	background-position: center;
 }
 
-#slide-1{background:url("img/slide/Wakatipu.jpg") 0 no-repeat fixed;}
-#slide-2{background:url("img/slide/Mosquee.jpg") 0 no-repeat fixed;}
-#slide-3{background:url("img/slide/Tongariro.jpg") 0 no-repeat fixed;}
-#slide-4{background:url("img/slide/SandyBay.jpg") 0 no-repeat fixed;}
-#slide-5{background:url("img/slide/Camp.jpg") 0 no-repeat fixed;}
+#slide-1,#slide-2,#slide-3,#slide-4 {background: url(img/sprites.png) 0 no-repeat fixed;}
+
+#slide-1{
+	background-position: 0 0;
+}
+
+#slide-2{
+	background-position: 0 -1083px ;
+
+}
+
+#slide-3{
+	background-position: 0 -2170px ;
+
+}
+
+#slide-4{
+	background-position: 0 -3255px ;
+
+}
+
 
 
 
