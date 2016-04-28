@@ -282,7 +282,7 @@ font-size: 16px;
 #mentions-legales {height: auto;}
 
 /* Contact elements */
-#contact-boxes {text-align:center; margin: 0 auto; width:260px;}
+#contact-boxes {text-align:center; margin: 0 auto; width:880px;}
 #contact-fb {width: 260px;float:left;}
 #contact-newsletter {width: 260px;display:inline-block;}
 #contact-other {width: 260px;float:right;}
@@ -408,7 +408,7 @@ font-size: 16px;
 	/*Flickr slider*/
 	#flickr, #pictures iframe{width:400px; height:266px;}
 	/* Contact elements */
-	#contact-fb,#contact-newsletter, #contact-other,#contact-boxes {text-align:center; margin: 0 auto; width:300px;}
+	#contact-fb,#contact-newsletter, #contact-other,#contact-boxes {width:400px;}
 	
 
 }
