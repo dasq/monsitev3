@@ -62,6 +62,7 @@ img {
 header { height:530px; 
 background-image:url("img/unnamed.jpg");
 background-size:cover;
+background-position: top center;
 }
 
 
@@ -215,16 +216,7 @@ section {
 }
 
 /*text box*/
-.text-container {
-	/*background-color: rgba(84,11,15,0.9);
-	padding: 5px 20px 5px 20px;
-	color:white;
-	-moz-border-radius:4px;
--webkit-border-radius:4px;
-border-radius:4px;
-border: 2px solid #ffffff;*/
-
-}
+.text-container {}
 
 /* Anchor span for aligning top of the div with menu bar */
 .anchor{
@@ -243,8 +235,9 @@ border: 2px solid #ffffff;*/
 	background-repeat: no-repeat;
 	background-color: white;	
 	height: auto;
-	width: 100%;
-	margin: 0;
+	width: auto;
+	margin: 0 auto;
+	overflow:hidden;
 	padding: 50px 80px 80px 80px;
 	position:relative;
 	margin-top: 0px;
@@ -260,16 +253,19 @@ border: 2px solid #ffffff;*/
 #about, #pictures, #music, #tour, #contact {height: auto;}
 
 .box-about {
-	height:auto;
-	width:100%;
-	background-image: url("img/Western guy web (2).png");
-	background-size: 500px;
-	background-position: right bottom;
+	height:100%;
+	width:auto;
+	background-image: url("img/background/WesternGuy.png");
+	background-size: 40%;
+	background-position: right center;
 	background-repeat: no-repeat;
 	position: relative;
 	}
-#about p{ width:45%; height:auto; }
+#Farid-Cartoon {width: 50%; float:right;}
+#about p{ width:100%; height:auto; }
 
+.box-tour {height:100%;width:auto;}
+	
 #footnote {
 height: auto;
 bottom: 0px;
@@ -285,11 +281,11 @@ font-size: 16px;
 #mentions-legales {height: auto;}
 
 /* Contact elements */
-#contact-boxes {text-align:center;}
-#contact-fb {width: 25%;float:left;}
-#contact-newsletter {width: 25%;display:inline-block;}
-#contact-other {width: 25%;float:right;}
-#contact-fb a {padding-bottom:10px; clear:both; background-color: #0A9076; border: 0 none; border-radius:4px; color: white; cursor: pointer; display: inline-block; font-size:15px; height: 32px; line-height: 32px; margin: 10px 5px 10px 0; padding:0; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: 50%;}
+#contact-boxes {text-align:center; margin: 0 auto; width:260px;}
+#contact-fb {width: 260px;float:left;}
+#contact-newsletter {width: 260px;display:inline-block;}
+#contact-other {width: 260px;float:right;}
+#contact-fb a {padding-bottom:10px; clear:both; background-color: #0A9076; border: 0 none; border-radius:4px; color: white; cursor: pointer; display: inline-block; font-size:15px; height: 32px; line-height: 32px; margin: 10px 5px 10px 0; padding:0; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: 120px;}
 #contact-fb a:hover {background-color:#0DC3A0;font-size:16px;}
 
 /* MailChimp Form */
@@ -316,38 +312,6 @@ font-size: 16px;
 }
 #flickr {height:531px; width:800px;margin: 0 auto;}
 #pictures p {width: auto; max-width: 800px; margin:auto; text-align:center;}
-
-
-@keyframes slidy {
-
-0% { left: 0%; }
-
-20% { left: 0%; }
-
-25% { left: -100%; }
-
-45% { left: -100%; }
-
-50% { left: -200%; }
-
-70% { left: -200%; }
-
-75% { left: -300%; }
-
-95% { left: -300%; }
-
-100% { left: -400%; }
-
-}
-
-
-
-/* LAYOUT */
-.container {
-	margin:0 auto;
-	overflow:hidden;
-	width:auto;
-}
 
 
 /*Soundcloud player*/
@@ -381,70 +345,69 @@ font-size: 16px;
 
 /* Others tiny screens devices(portrait and landscape) ----------- */
 @media only screen and (max-width : 319px) {
+	h2 {font-size: 60px;}
+	.container{	padding: 10px 10px 20px 10px;}
+
+	/*MENU*/
 	nav ul {display:none;}
 	nav select  {display: inline-block;}
+	#menu h1 {font-size : 26px;}
+
+	
+	/*Music*/
+	#player-container,.players, #music iframe {width:250px;}
+	.players {clear:both; }
+
 	/*Flickr slider*/
-	#pictures iframe{display:none;}
+	#flickr, #pictures iframe{width:250px; height:166.5px;}
 }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-width : 320px) and (max-width : 480px) {
+	h2 {font-size: 60px;}
+	.container{	padding: 10px 10px 20px 10px;}
+
+	/*MENU*/
 	nav ul {display:none;}
 	nav select  {display: inline-block;}
-	.container{padding-top:50px; padding-left:20px;}
-	#menu #brand {height:60px;margin-top:0;}
-	nav{margin-top:-60px;}
-	/*ABOUT*/
-	.box-about {
-		/*background-size: 400px;*/
-		background-image:none;
-		height:750px;
-	}
-	#about h2 {
-	background-image: url("img/Western-Farid.png");
-	background-size: 100px;
-	background-position: right bottom;
-	background-repeat: no-repeat;
-	position: relative;}
-	#about p{ width:95%;}
-	#about.container{padding: 0px 5px 5px 5px; height:auto;}
-	/*Music*/
-	#music iframe{width:90%; height:450px;}
-	/* CONTENT SLIDER */
-	#pictures.container{padding: 0px 5px 5px 5px; height:auto;}
-	/*Flickr slider*/
-	#pictures iframe{width:300px; height:199px;}
+	#menu h1 {font-size : 36px;}
 
-	/*Tour dates*/
-	#tour.container{height:auto;}
+	
+	/*Music*/
+	#player-container,.players, #music iframe {width:250px;}
+	.players {clear:both; }
+
+	/*Flickr slider*/
+	#flickr, #pictures iframe{width:250px; height:166.5px;}
 	
 }
 
 /* Between smartphones and tablets (portrait and landscape) ----------- */ 	
 @media only screen and (min-width : 481px) and (max-width : 767px) {
-	.container{padding-top:50px; padding-left:20px;}
-	#menu #brand {height:60px;margin-top:0;}
-	nav{margin-top:-60px;}
-	/*ABOUT*/
-	.box-about {
-		background-size: 400px;
-		height:auto;
-	}
-	#about.container{padding: 0px 5px 5px 5px; height:auto;}
+	.container{	padding: 20px 20px 50px 20px;}
+	/*NAV*/
+	nav ul {display:none;}
+	nav select  {display: inline-block;}
+
 	/*Music*/
-	#music iframe{width:90%; height:450px;}
+	#player-container,.players, #music iframe {width:350px;}
+	.players {clear:both; }
 	/*Flickr slider*/
-	#pictures iframe{width:400px; height:266px;}
+	#flickr, #pictures iframe{width:351px; height:233px;}
+	/* Contact elements */
+	#contact-fb,#contact-newsletter, #contact-other,#contact-boxes {text-align:center; margin: 0 auto; width:300px;}
 }
 
 /* Tablets (portrait and landscape) ----------- */
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
-	.container{
-	padding: 0px 20px 20px 100px;
-	}
-	.box-about {
-		background-size: 500px;
-	}
-	#menu #brand {height:100px;margin-top:0;}
-	nav{margin-top:-100px;}
+	.container{	padding: 50px 50px 80px 50px;}
+	/*Music*/
+	#player-container{width:400px;}
+	.players {clear:both; }
+	/*Flickr slider*/
+	#flickr, #pictures iframe{width:400px; height:266px;}
+	/* Contact elements */
+	#contact-fb,#contact-newsletter, #contact-other,#contact-boxes {text-align:center; margin: 0 auto; width:300px;}
+	
+
 }
