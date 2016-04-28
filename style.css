@@ -252,19 +252,20 @@ section {
 
 #about, #pictures, #music, #tour, #contact {height: auto;}
 
-.box-about {
-	height:100%;
-	width:auto;
-	background-image: url("img/background/WesternGuy.png");
-	background-size: 40%;
-	background-position: right center;
-	background-repeat: no-repeat;
-	position: relative;
-	}
+.box-about {height:100%;width:auto;}
+
 #Farid-Cartoon {width: 50%; float:right;}
 #about p{ width:100%; height:auto; }
 
-.box-tour {height:100%;width:auto;}
+.box-tour {
+	height:100%;
+	width:auto;
+	background-image: url("img/background/plane.png");
+	background-size: 30%;
+	background-position: top right;
+	background-repeat: no-repeat;
+	position: relative;
+	}
 	
 #footnote {
 height: auto;
