@@ -176,6 +176,7 @@ nav select {display:none;}
 	height: 400px;
 	margin: 0 auto;
 	padding: 0;
+	background-position: center;
 }
 
 #slide-1{background:url("img/slide/Wakatipu.jpg") 0 no-repeat fixed;}
