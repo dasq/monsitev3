@@ -51,9 +51,6 @@
 		<!-- Sticky menu bar -->
 		<script src="js/jquery.sticky.js"></script>
 		<script src="js/sticky.menubar.js"></script>
-				
-		<!-- - - - JQUERY FOR SLIDING NAVIGATION - -->   
-		<script src="js/sliding.navigation.js">	</script>
 		
 		<!-- Dynamic display header -->
 		<script src="js/dynamic.header.js"></script>
@@ -61,13 +58,11 @@
 		<!-- dropdown menu -->
 		<script src="js/dropdown.menu.js"></script>
 		
-		<!-- Smooth scrolling in Chrome -->
+		<!-- Smooth scrolling for links -->
 		<script src="js/smoothscroll.js"></script>
 		
 		<!-- Google Analytics -->
-		<script src="js/analytics.js"></script>
-		
-		
+		<script src="js/analytics.js"></script>		
 		
 		
     </head>
@@ -82,7 +77,7 @@
 						<li><a href="http://www.faridbenmiles.bandcamp.com" title="Bandcamp" target="_blank"><img alt="Bandcamp" src="img/social/bandcamp.png"/></a></li>
 						<li><a href="http://www.youtube.com" title="Youtube" target="_blank"><img alt="Youtube" src="img/social/youtube.png"/></a></li>
 						<li><a href="http://www.flickr.com" title="Flickr"><img alt="Flickr!" src="img/social/flickr.png"></a></li>
-						<li><a href="#contact-link" title="Mail"><img alt="Mail" src="img/social/mail.png"></a></li>
+						<li><a href="#contact-link" class="smoothScroll" title="Mail"><img alt="Mail" src="img/social/mail.png"></a></li>
 				</ul>
 			</div>
 		</header>
@@ -90,13 +85,13 @@
 		<!-- menu -->
 		<div id="menu-container">
 			<div id="menu" class="fixed-nav-bar">
-				<div id="brand-link"><a href="#social"><img id="brand" alt="Farid Ben Miles - Logo" src="img/logo/logo-head-white.png"/><h1>Farid Ben Miles</h1></a></div>
+				<div id="brand-link"><a href="#social" class="smoothScroll"><img id="brand" alt="Farid Ben Miles - Logo" src="img/logo/logo-head-white.png"/><h1>Farid Ben Miles</h1></a></div>
 				<nav>
 					<ul>
 						<!--<li><a class="lien" href="#header">Top</a></li>-->
-						<li><a class="lien" href="#about-me-link">Who is Farid?</a></li>
-						<li><a class="lien" href="index.html#about-link">Back to my world</a></li>
-						<li><a class="lien" href="#contact-link">Contact</a></li>
+						<li><a class="smoothScroll" href="#about-me-link">Who is Farid?</a></li>
+						<li><a class="smoothScroll" href="index.html#about-link">Back to my world</a></li>
+						<li><a class="smoothScroll" href="#contact-link">Contact</a></li>
 					</ul>
 					<select name="dropdpown" size="1" onchange="scrollTo(this.value)">
 						<option value="" selected>Menu</option> 
