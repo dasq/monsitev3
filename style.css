@@ -59,7 +59,7 @@ img {
 }
 
 /* Header parameter to fully display Parallax */
-header { height:530px; 
+header { height:400px; 
 background-image:url("img/unnamed.jpg");
 background-size:cover;
 background-position: top center;

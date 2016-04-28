@@ -1,4 +1,4 @@
 1. menu bar to refit (left not fitting on Safari)
 2. links not bringing at the right place (only when full address typed in) >> Chrome + Safari
-3. header picture to not full screen cover on small devices? (review javascript & media queries)
+3.? header picture to not full screen cover on small devices? (review javascript & media queries) ?
 
