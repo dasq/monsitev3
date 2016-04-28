@@ -84,9 +84,7 @@ right: 15px
 	margin-right: 0.2%;
 	}
 
-#social img {height: 35px; width:35px; 
-
-}
+#social img {height: 35px; width:35px; }
 
 #social a {opacity:0.5;}
 #social a:hover {opacity:1;}
