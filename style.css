@@ -58,7 +58,7 @@ img {
 
 /* Header parameter to fully display Parallax */
 header { height:400px; 
-background-image:url("img/unnamed.jpg");
+background-image:url("img/background/Farid Ben Miles.jpg");
 background-size:cover;
 background-position: top center;
 }
@@ -169,49 +169,24 @@ nav select {display:none;}
 }
 
 /* Size display of the photos*/	
-section {
+.slide-pic {
 	height:400px;
 	width:100%;
 	background-color: #5C1417;
+	background-size:cover;
+	color: white;
+	height: 400px;
+	margin: 0 auto;
+	padding: 0;
 }
 
-#slide-1{
-	background:url("img/slide/Wakatipu.jpg") 0 no-repeat fixed;
-	background-size:cover;
-	color: white;
-	height: 400px;
-	margin: 0 auto;
-	padding: 0;
-	background-color: #5C1417;
-}
-#slide-2{
-	background:url("img/slide/Mosquee.jpg") 0 no-repeat fixed;
-	background-size:cover;
-	color: white;
-	height: 400px;
-	margin: 0 auto;
-	padding: 0;
-	background-color: #5C1417;
-}
-#slide-3{
-	background:url("img/slide/Tongariro.jpg") 0 no-repeat fixed;
-	background-size:cover;
-	color: white;
-	height: 400px;
-	margin: 0 auto;
-	padding: 0;
-	background-color: #5C1417;
-}
+#slide-1{background:url("img/slide/Wakatipu.jpg") 0 no-repeat fixed;}
+#slide-2{background:url("img/slide/Mosquee.jpg") 0 no-repeat fixed;}
+#slide-3{background:url("img/slide/Tongariro.jpg") 0 no-repeat fixed;}
+#slide-4{background:url("img/slide/SandyBay.jpg") 0 no-repeat fixed;}
+#slide-5{background:url("img/slide/Camp.jpg") 0 no-repeat fixed;}
 
-#slide-4{
-	background:url("img/slide/SandyBay.jpg") 0 no-repeat fixed;
-	background-size:cover;
-	color: white;
-	height: 400px;
-	margin: 0 auto;
-	padding: 0;
-	background-color: #5C1417;
-}
+
 
 /*text box*/
 .text-container {}

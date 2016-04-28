@@ -13,13 +13,12 @@
 		<!--<meta name="keywords" content="Farid Ben Miles, acoustic, modern, fingerstyle, guitar, guitarist, music, musician, world music, folk music, about, booking, travel">-->
 		<meta name="copyright" content="Farid Ben Miles - 2015-2016">
 		
-		<!-- TO UPDATE WITH FAVICON !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-		Your favicon graphic must be 16x16 pixels 
+		<!-- Your favicon graphic must be 16x16 pixels 
 	================================================== -->		
-		<link rel="shortcut icon" href="favicon.ico">
-		<link rel="icon" type="image/ico" href="favicon.ico"> 
+		<link rel="shortcut icon" href="img/favicon/icon_web.png">
+		<link rel="icon" type="image/ico" href="img/favicon/icon_web.png"> 
 		<!-- an image 57x57 pixels in size and save it as a png -->	
-		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<!-- !!!!!!!!!!!!!!!!!!!!!! TO UPDATE WITH FAVICON  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 		
 		<!-- Mobile Specific Metas
 	================================================== -->
@@ -29,112 +28,57 @@
 		
 		<!-- CSS
 	================================================== -->
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="style.css">
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 		
 		<!-- JS
 	================================================== -->
-		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/jquery-1.11.3.min.js"></script>
 		
 		<!-- Sticky menu bar -->
 		<script src="js/jquery.sticky.js"></script>
-		<script>
-		  $(document).ready(function(){
-			$("#menu-container").sticky({topSpacing:0});
-			
-			var width = window.innerWidth ||
-                document.documentElement.clientWidth ||
-                document.body.clientWidth;
+		<script src="js/sticky.menubar.js"></script>
 				
-			var height = window.innerHeight ||
-							 document.documentElement.clientHeight ||
-							 document.body.clientHeight;
-			if (width < 767) {
-				var heightBrand = 0;
-				$("#brand").sticky({topSpacing:heightBrand, getWidthFrom: '#brand'});
-				//$("#brand").css({"margin-top": -heightBrand,}); 
-			} 
-			else {
-				var heightBrand = height - 90;
-				$("#brand").sticky({topSpacing:heightBrand, getWidthFrom: '#brand'});
-				$("#brand").css({"margin-top": -heightBrand,}); 
-			}
-						
-		  });
-		</script>
-		<script src="js/parallax.js-master/parallax.min.js"></script>
-		
 		<!-- - - - JQUERY FOR SLIDING NAVIGATION - -->   
-		<script>
-		$(document).ready(function() {
-		$('a[href*=#]').each(function() {
-		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-		&& location.hostname == this.hostname
-		&& this.hash.replace(/#/,'') ) {
-		var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
-		var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-		if ($target) {
-		var targetOffset = $target.offset().top;
-		$(this).click(function() {
-					$("#nav li a").removeClass("active");
-					$(this).addClass('active');
-		$('html, body').animate({scrollTop: targetOffset}, 1000);
-		return false;
-		});
-		}
-		}
-		});
-		 
-		});
-		</script>
+		<script src="js/sliding.navigation.js">	</script>
 		
 		<!-- Dynamic display header -->
-		<script type="text/javascript">
-			function jsUpdateSize(){
-				// Get the dimensions of the viewport
-				var height = window.innerHeight ||
-							 document.documentElement.clientHeight ||
-							 document.body.clientHeight;
-							 
-				var heightBanner = height - 60;
-				//change the value of the height
-				$("#header").css({"height": heightBanner,}); 
-			};
-			window.onload = jsUpdateSize;       // When the page first loads
-			window.onresize = jsUpdateSize;     // When the browser changes size
-		</script>
+		<script src="js/dynamic.header.js"></script>
 		
 		<!-- dropdown menu -->
-		<script type="text/javascript">
-			function scrollTo(target){
-				var targetPosition = $(target).offset().top;
-				$('html,body').animate({ scrollTop: targetPosition}, 'slow');
-			}
-		</script>
+		<script src="js/dropdown.menu.js"></script>
+		
+		<!-- Smooth scrolling in Chrome -->
+		<script src="js/smoothscroll.js"></script>
+		
+		<!-- Google Analytics -->
+		<script src="js/analytics.js"></script>
+		
+		
 		
 		
     </head>
 	
 	<body>
-	<?php include_once("analyticstracking.php") ?>
 		<!-- header and social links -->
-		<div id="header" data-parallax="scroll" data-image-src="img/unnamed.jpg">
-			
+		<header>
 			<div id="social" >
 				<ul>
-						<li><a href="http://www.facebook.com" target="_blank"><img alt="Facebook" src="img/social/facebook.png"/></a></li>
-						<li><a href="http://www.soundcloud.com" target="_blank"><img alt="Soundcloud" src="img/social/soundcloud.png"/></a></li>
-						<li><a href="http://www.bandcamp.com" target="_blank"><img alt="Bandcamp" src="img/social/bandcamp.png"/></a></li>
-						<li><a href="http://www.youtube.com" target="_blank"><img alt="Youtube" src="img/social/youtube.png"/></a></li>
+						<li><a href="http://www.facebook.com/faridbenmiles" title="Facebook" target="_blank"><img alt="Facebook" src="img/social/facebook.png"/></a></li>
+						<li><a href="http://www.soundcloud.com/faridbenmiles" title="Soundcloud" target="_blank"><img alt="Soundcloud" src="img/social/soundcloud.png"/></a></li>
+						<li><a href="http://www.faridbenmiles.bandcamp.com" title="Bandcamp" target="_blank"><img alt="Bandcamp" src="img/social/bandcamp.png"/></a></li>
+						<li><a href="http://www.youtube.com" title="Youtube" target="_blank"><img alt="Youtube" src="img/social/youtube.png"/></a></li>
+						<li><a href="http://www.flickr.com" title="Flickr"><img alt="Flickr!" src="img/social/flickr.png"></a></li>
+						<li><a href="#contact-link" title="Mail"><img alt="Mail" src="img/social/mail.png"></a></li>
 				</ul>
 			</div>
-		</div>
+		</header>
 		
 		<!-- menu -->
 		<div id="menu-container">
-			<div id="menu">
-				<a href="#header"><img id="brand" alt="Farid-brand" src="img/brand-transparent-bis.png"/></a>
-				<nav class="fixed-nav-bar" style="">
+			<div id="menu" class="fixed-nav-bar">
+				<div id="brand-link"><a href="#social"><img id="brand" alt="Farid Ben Miles - Logo" src="img/logo/logo-head-white.png"/><h1>Farid Ben Miles</h1></a></div>
+				<nav>
 					<ul>
 						<!--<li><a class="lien" href="#header">Top</a></li>-->
 						<li><a class="lien" href="#about-me-link">Who is Farid?</a></li>
@@ -152,67 +96,82 @@
 			</div>		
 		</div>
 		
+		
 		<!-- About's content -->
 		<span class="anchor" id="about-me-link"></span>
-		<div id="about-me" class="container">
+		<section id="about-me" class="container">
 			<div class="box">
 				<h2>Who is Farid?</h2>
-				<img id="busking" src="img/Busking_in_Dresden.jpg" alt="Busking_in_Dresden"/>
+				<img id="busking" src="img/about/Farid Ben Miles - Busking.jpg" alt="Farid Ben Miles - Busking"/>
 				<h3>"You don't know where you're going until you know where you have been" - <span>Unknown</span></h3>
 				<p>Traveling has been my life since forever, and even before myself. My parents were born in Algeria and are both from the Berber family. One of the most famous group of the Berbers is named the Tuareg who are known, among other things, for travelling and living in the desert of the Saharan. But they are just a small part of this big family... </p>
-				<p>Originally from the Maghreb (at least 10,000 BC), the Berbers expanded on the south to inhabit the whole Western North Africa and even more (Morocco, Algeria, Tunisia, Libya, Egypt, Mali, Niger, and Mauretania). Connections with the Scandinavians (Sami people) have even been found. The importance of the Berber culture in Arabic world is such that they are often miscalled Arabs. But beware if you do, they will have a pleasure reminding you the differences… =) </p>
+				<p>Originally from the Maghreb (at least 10,000 BC), the Berbers expanded on the south to inhabit the whole Western North Africa and even more (Morocco, Algeria, Tunisia, Libya, Egypt, Mali, Niger, and Mauretania). Connections with the Scandinavians (Sami people) have even been found. The importance of the Berber culture in Arabic world is such that they are often miscalled Arabs. But beware if you do, they will have a pleasure reminding you the differences. =) </p>
 				<h3>"Youth smiles without any reason. It is one of its chiefest charms." - <span>Thomas Gray</span></h3>
 				<p>So this is almost unsurprisingly that my parents also moved from their birthplace: I was then born in the suburb of Paris. I grew up in a mixed environment between the French culture and the Arab-Berber culture: I was studying classical music in school and I was dancing on Oriental music at home (well, maybe not so much). </p>
-				<p>After graduating in high school, I went to study engineering in Troyes and this was a key time of my life where I expanded my vision of the Occidental culture. Maintaining my classical guitar studies, I opened myself to a new world playing the electric guitar in so many facets it was possible: rock, blues, funk, fusion, jazz, pop, experimental… Entering the big band of the university was a big part of it giving me the possibility to work every semester with a professional musician (Nicolas Genest, Daniel Casimir, Alexis Torres, Olivier Sens…) This was such a chance than sometimes I almost forgot I was in the school studying IT engineering.</p>
-				<p>Actually, I was not always there in Troyes during my studies. I have been an exchange student in New Orleans, an intern in Boston, and a “researcher” in London. Obviously, I always took the opportunity to join both my studies and my passion. I have been busking in the streets of London, studying the guitar in the rooms of Berklee with David Fiuczinsky and I graduated in Music Management and Art Marketing in the University of New Orleans. </p>
-				<p>Finally, I completed my engineering school and followed the path of the "classical" working life. I was one of those you can see everyday following each others in La Défense, major business district in Paris. But there is also an amazing art life there. So, I kept myself involved in the music life in Paris and in France performing in several scenarios from Rap to Jazz and from bands to movie soundtracks. Those experiences offered me the chance to play traditional music from middle-age occidental to Persian or even Indian folklore by learning the Oud and the Bouzouki. In the meantime, I graduated from the American School of Modern Music (Berklee French antenna).</p>
+				<p>After graduating in high school, I went to study engineering in Troyes and this was a key time of my life where I expanded my vision of the Occidental culture. Maintaining my classical guitar studies, I opened myself to a new world playing the electric guitar in so many facets it was possible: rock, blues, funk, fusion, jazz, pop, experimental. Entering the big band of the university was a big part of it giving me the possibility to work every semester with a professional musician (Nicolas Genest, Daniel Casimir, Alexis Torres, Olivier Sens). This was such a chance than sometimes I almost forgot I was in the school studying IT engineering.</p>
+				<p>Actually, I was not always there in Troyes during my studies. I have been an exchange student in New Orleans, an intern in Boston, and a researcher in London. Obviously, I always took the opportunity to join both my studies and my passion. I have been busking in the streets of London, studying the guitar in the rooms of Berklee with David Fiuczinsky and I graduated in Music Management and Art Marketing in the University of New Orleans. </p>
+				<p>Finally, I completed my engineering school and followed the path of the "classical" working life. I was one of those you can see everyday following each others in La DÃ©fense, major business district in Paris. But there is also an amazing art life there. So, I kept myself involved in the music life in Paris and in France performing in several scenarios from Rap to Jazz and from bands to movie soundtracks. Those experiences offered me the chance to play traditional music from middle-age occidental to Persian or even Indian folklore by learning the Oud and the Bouzouki. In the meantime, I graduated from the American School of Modern Music (Berklee French antenna).</p>
 				<h3>"Educating the mind without educating the heart is no education at all" - <span>Aristote</span></h3>
 				<p>After 4 years working in Paris for world leading IT and financial auditing companies, I said enough! Those years were very strenuous for my peace of mind. I decided to take off the suit and to offer myself time to put things into perspective. I travelled only with a backpack and a guitar through Asia, North Africa, Oceania, and Occident. And I have been overwhelmed by the beauties of the nature and by the warm-heartedness of some people. These impacted my life forever!</p>
-				<img id="portrait" src="img/fa--22.jpg" alt="Portrait_Farid"/></div>
+				<img id="portrait" src="img/about/Farid Ben Miles - Portrait.jpg" alt="Farid Ben Miles - Portrait"/></div>
 				<p>During this travel, I have learned more things than the school or the job have ever taught me (and which are fundamental in life, I believe.) At my corporate times, I was starting to feel angry about everything in this world and believing that everything was getting wrong. But I can proudly say that there is Love everywhere around us! We need to keep ourselves opened to the others and I know this can be really difficult when submerged by the constraints of our modern world. Simple things can participate in our happiness. And caring about the others is one of the fundamental keys. Giving all my heart when playing became a crucial goal I always challenge myself to achieve. </p>
-				<p>My music is the result of the fundamental lessons drawn from my life which I share with jubilation. I hope this communicates my lifetime experience to show you the beauty of “going overseas”. It is not possible to always travel and the music has always been my conveyance for the mind like pictures can be too. As I am better expressing myself through the music, I invite you to <a href="">listen to my compositions</a>. You can also enjoy the different pictures of my travels on <a href="">my Flickr account</a>. Finally, I will share with you the words of the farseeing philosophe Plato which mean very much to me: </br> <h3>“Music is a moral law. It gives soul to the universe, wings to the mind, flight to the imagination, and charm and gaiety to life and to everything.”</h3></p>
+				<p>My music is the result of the fundamental lessons drawn from my life which I share with jubilation. I hope this communicates my lifetime experience to show you the beauty of "going overseas". It is not possible to always travel and the music has always been my conveyance for the mind like pictures can be too. As I am better expressing myself through the music, I invite you to <a href="http://www.soundcloud.com/faridbenmiles" Title="Lien Soundcloud">listen to my compositions</a>. You can also enjoy the different pictures of my travels on <a href="https://www.flickr.com/photos/137623602@N04/" title="Flickr">my Flickr account</a>. Finally, I will share with you the words of the farseeing philosophe Plato which mean very much to me: </br> <h3>"Music is a moral law. It gives soul to the universe, wings to the mind, flight to the imagination, and charm and gaiety to life and to everything."</h3></p>
 
 
 			</div>
-		</div>
-		
-		<!-- Fourth photo -->
-		<section id="5" data-parallax="scroll" data-image-src="img/slide/Camp.jpg">	
 		</section>
 		
-		<!-- Contact  form -->
+		<!-- Fifth photo -->
+		<div id="slide-5" class="slide-pic"></div>
+		
+		<!-- Contact  section -->
 		<span class="anchor" id="contact-link"></span>
-		<div id="contact" class="container">
-			<div class="box">
-				<h2> Contact </h2>
-				
-				<!-- Begin MailChimp Signup Form -->
-					<div id="mc_embed_signup">
-					<form action="//faridbenmiles.us12.list-manage.com/subscribe/post?u=b48a727301057021e14543d69&amp;id=6fdffcc9f1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-						<div id="mc_embed_signup_scroll">
-						<label for="mce-EMAIL">Farid Ben Miles' Newsletter</label>
-						<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter email address" required>
-						<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-						<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b48a727301057021e14543d69_6fdffcc9f1" tabindex="-1" value=""></div>
-						<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-						</div>
-					</form>
+		<section id="contact" class="container">
+			<div class="box"> 
+			
+				<h2> Contact me </h2>
+				<div id="contact-boxes">
+					
+					<div id="contact-fb">
+					<h3>Via Facebook</h3>
+						<p>The best way to get in contact with me is via Facebook. This is also where I post the most news, videos and pictures.</p>
+						<a href="http://www.facebook.com/faridbenmiles">Facebook page</a>
 					</div>
-				<!--End mc_embed_signup-->
-				<p>I am always very happy to meet new people and to share a part of our lives. <br/> 
-					Sometimes I welcome strangers at home, and we share a meal, stories, a moment in our life. </br>
-					So feel free to write me about anything you have in mind and I will make sure to answer the soonest as I can.
-					</br> <p><b>faridbenmiles@gmail.com</p></b>
-					 
-					 <p>Make sure also to connect on my <a href="http://www.facebook.com/faridbenmiles">facebook page</a> to keep posted with latest news and to drop a message there too.</p>
-				</p> 				
+					
+					<div id="contact-newsletter"> 
+					
+						<h3>Farid Ben Miles' Newsletter</h3>
+						<!-- Begin MailChimp Signup Form -->
+						<div id="mc_embed_signup">
+						<form action="//faridbenmiles.us12.list-manage.com/subscribe/post?u=b48a727301057021e14543d69&amp;id=6fdffcc9f1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+							<div id="mc_embed_signup_scroll">
+							<label for="mce-EMAIL">To join the Newsletter, simply type in your email address below. Be sure that I will NOT share it with anyone.</label>
+							<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter email address" required>
+							<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b48a727301057021e14543d69_6fdffcc9f1" tabindex="-1" value=""></div>
+							<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+							</div>
+						</form>
+						</div>
+						<!--End mc_embed_signup-->
+					</div>
+					
+					<div id="contact-other"> 
+						<div class="text-container">
+							<h3>Via Email</h3>
+							<p>For any other requests, please contact me on this address
+								<br> <p><b>faridbenmiles  [at]  gmail  .  com</b></p>
+							</p> 
+						</div>	
+					</div>
+				</div>				
 			</div>
-		</div>
+		</section>
 		
 		<!-- Footnote -->
-		<div id="footnote">
-		© Copyright 2016 Farid Ben Miles | <a href="mentions.html" target="_blank">Mentions légales</a> 
-		</div>
+		<footer id="footnote">
+		Â© Copyright 2016 Farid Ben Miles | <a href="mentions.html" target="_blank">Mentions lÃ©gales</a> 
+		</footer>
 	
 	</body>	
 	
