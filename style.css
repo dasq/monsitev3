@@ -333,6 +333,12 @@ font-size: 16px;
 
 	/*Flickr slider*/
 	#flickr, #pictures iframe{width:250px; height:166.5px;}
+	
+	#slide-1{background:url("img/slide/Wakatipu-mobile.jpg") 0 no-repeat fixed;}
+	#slide-2{background:url("img/slide/Mosquee-mobile.jpg") 0 no-repeat fixed;}
+	#slide-3{background:url("img/slide/Tongariro-mobile.jpg") 0 no-repeat fixed;}
+	#slide-4{background:url("img/slide/SandyBay-mobile.jpg") 0 no-repeat fixed;}
+	#slide-5{background:url("img/slide/Camp-mobile.jpg") 0 no-repeat fixed;}
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -353,6 +359,12 @@ font-size: 16px;
 	/*Flickr slider*/
 	#flickr, #pictures iframe{width:250px; height:166.5px;}
 	
+	#slide-1{background:url("img/slide/Wakatipu-mobile.jpg") 0 no-repeat fixed;}
+	#slide-2{background:url("img/slide/Mosquee-mobile.jpg") 0 no-repeat fixed;}
+	#slide-3{background:url("img/slide/Tongariro-mobile.jpg") 0 no-repeat fixed;}
+	#slide-4{background:url("img/slide/SandyBay-mobile.jpg") 0 no-repeat fixed;}
+	#slide-5{background:url("img/slide/Camp-mobile.jpg") 0 no-repeat fixed;}
+	
 }
 
 /* Between smartphones and tablets (portrait and landscape) ----------- */ 	
@@ -361,7 +373,6 @@ font-size: 16px;
 	/*NAV*/
 	nav ul {display:none;}
 	nav select  {display: inline-block;}
-
 	/*Music*/
 	#player-container,.players, #music iframe {width:350px;}
 	.players {clear:both; }
@@ -369,6 +380,12 @@ font-size: 16px;
 	#flickr, #pictures iframe{width:351px; height:233px;}
 	/* Contact elements */
 	#contact-fb,#contact-newsletter, #contact-other,#contact-boxes {text-align:center; margin: 0 auto; width:300px;}
+	
+	#slide-1{background:url("img/slide/Wakatipu-mobile.jpg") 0 no-repeat fixed;}
+	#slide-2{background:url("img/slide/Mosquee-mobile.jpg") 0 no-repeat fixed;}
+	#slide-3{background:url("img/slide/Tongariro-mobile.jpg") 0 no-repeat fixed;}
+	#slide-4{background:url("img/slide/SandyBay-mobile.jpg") 0 no-repeat fixed;}
+	#slide-5{background:url("img/slide/Camp-mobile.jpg") 0 no-repeat fixed;}
 }
 
 /* Tablets (portrait and landscape) ----------- */
