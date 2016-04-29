@@ -191,7 +191,6 @@ a:hover#menu-icon {
 	-o-background-size: cover; 
     background-size: auto cover;
 	color: white;
-	height: 400px;
 	margin: 0 auto;
 	padding: 0;
 	background-position: center;
@@ -469,11 +468,6 @@ font-size: 16px;
 	/* Contact elements */
 	#contact-fb,#contact-newsletter, #contact-other,#contact-boxes {width:300px;}
 	
-	#slide-1{background:url("img/slide/Wakatipu-mobile.jpg") 0 no-repeat fixed;}
-	#slide-2{background:url("img/slide/Mosquee-mobile.jpg") 0 no-repeat fixed;}
-	#slide-3{background:url("img/slide/Tongariro-mobile.jpg") 0 no-repeat fixed;}
-	#slide-4{background:url("img/slide/SandyBay-mobile.jpg") 0 no-repeat fixed;}
-	#slide-5{background:url("img/slide/Camp-mobile.jpg") 0 no-repeat fixed;}
 }
 
 /* Tablets (portrait and landscape) ----------- */
