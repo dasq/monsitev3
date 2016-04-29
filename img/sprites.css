@@ -26,3 +26,23 @@
 	height: 1080px;
 }
 
+#slide-1,#slide-2,#slide-3,#slide-4 {background: url(img/sprites.png) 0 no-repeat fixed;}
+
+#slide-1{
+	background-position: 0 0;
+}
+
+#slide-2{
+	background-position: 0 -1083px ;
+
+}
+
+#slide-3{
+	background-position: 0 -2170px ;
+
+}
+
+#slide-4{
+	background-position: 0 -3255px ;
+
+}
