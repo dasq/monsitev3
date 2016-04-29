@@ -322,7 +322,7 @@ font-size: 16px;
 /* Others tiny screens devices(portrait and landscape) ----------- */
 @media only screen and (max-width : 319px) {
 	h2 {font-size: 60px;}
-	.container{	padding: 10px 10px 20px 10px;}
+	.container{	padding: 5px 5px 10px 5px;}
 
 	/*MENU*/
 	nav ul {display:none;}
@@ -336,6 +336,9 @@ font-size: 16px;
 
 	/*Flickr slider*/
 	#flickr, #pictures iframe{width:250px; height:166.5px;}
+	
+	/* Contact elements */
+	#contact-fb,#contact-newsletter, #contact-other,#contact-boxes {width:200px;}
 	
 	#slide-1{background:url("img/slide/Wakatipu-mobile.jpg") 0 no-repeat fixed;}
 	#slide-2{background:url("img/slide/Mosquee-mobile.jpg") 0 no-repeat fixed;}
