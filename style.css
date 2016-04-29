@@ -174,7 +174,7 @@ nav select {display:none;}
 	-webkit-background-size: cover; 
 	-moz-background-size: cover; 
 	-o-background-size: cover; 
-    background-size: cover;
+    background-size: auto cover;
 	color: white;
 	height: 400px;
 	margin: 0 auto;
