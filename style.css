@@ -331,14 +331,14 @@ font-size: 16px;
 
 	
 	/*Music*/
-	#player-container,.players, #music iframe {width:250px;}
+	#player-container,.players, #music iframe {width:200px;}
 	.players {clear:both; }
 
 	/*Flickr slider*/
 	#flickr, #pictures iframe{width:250px; height:166.5px;}
 	
 	/* Contact elements */
-	#contact-fb,#contact-newsletter, #contact-other,#contact-boxes {width:200px;}
+	#contact-fb,#contact-newsletter, #contact-other,#contact-boxes {width:100%;}
 	
 	#slide-1{background:url("img/slide/Wakatipu-mobile.jpg") 0 no-repeat fixed;}
 	#slide-2{background:url("img/slide/Mosquee-mobile.jpg") 0 no-repeat fixed;}
