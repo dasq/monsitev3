@@ -45,9 +45,9 @@ h3 {
 
 /* General links parameters */
 a { color: #0a9076; opacity:1; font-family: Roboto,'Source Sans Pro', sans-serif; border-bottom: 0px none; text-decoration:none; }
-a:active { color: #0DC3A0; opacity:1; border-bottom: 2px solid #fff; }
-a:hover { color: #0DC3A0; opacity:1; border-bottom: 0px none;  }
 a:visited { color: #0a9076; opacity:0.6; font-family: Roboto,'Source Sans Pro', sans-serif; border-bottom: 0px none; text-decoration:none;} 
+a:hover { color: #0DC3A0; opacity:1; border-bottom: 0px none;  }
+a:active { color: #0DC3A0; opacity:1; border-bottom: 2px solid #fff; }
 
 /* Image parameters to fully display */
 img {
@@ -149,12 +149,13 @@ nav li{
 
 /* General parameters of the menu titles */
 #menu-container #menu nav ul li a:link { color: #FFF; opacity:1; font-size: 26px; font-family: Amatic,'Source Sans Pro', sans-serif; border-bottom: 0px none; text-decoration:none; }
+/*  Parameters of the menu titles when the title have been visited */
+#menu-container #menu nav ul li a:visited { color: #FFF; opacity:1; font-size: 26px; font-family: Amatic,'Source Sans Pro', sans-serif; border-bottom: 0px none; text-decoration:none;} 
 /*  Parameters of the menu titles when the mouse is over the title */
 #menu-container #menu nav ul li a:hover { color: #0a9076; opacity:1; border-bottom: 0px none;  }
 /*  Parameters of the menu titles when the title have been clicked on*/
 #menu-container #menu nav ul li a:active { color: #0a9076; opacity:1; border-bottom: 2px solid #fff; text-decoration:none;}
-/*  Parameters of the menu titles when the title have been visited */
-#menu-container #menu nav ul li a:visited { color: #FFF; opacity:1; font-size: 26px; font-family: Amatic,'Source Sans Pro', sans-serif; border-bottom: 0px none; text-decoration:none;} 
+
 
 nav select {display:none;}
 
@@ -196,12 +197,6 @@ a:hover#menu-icon {
 	background-position: center;
 }
 
-.thetest {height:300px;
-	width:100%;
-	position:relative;}
-#test{	height:300px;
-	width:100%;
-	}
 
 #slide-1{background:url("img/slide/Wakatipu.jpg") 0 no-repeat fixed;}
 #slide-2{background:url("img/slide/Mosquee.jpg") 0 no-repeat fixed;}
