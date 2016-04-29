@@ -362,6 +362,9 @@ font-size: 16px;
 	/*Flickr slider*/
 	#flickr, #pictures iframe{width:250px; height:166.5px;}
 	
+	/* Contact elements */
+	#contact-fb,#contact-newsletter, #contact-other,#contact-boxes {width:280px;}
+	
 	#slide-1{background:url("img/slide/Wakatipu-mobile.jpg") 0 no-repeat fixed;}
 	#slide-2{background:url("img/slide/Mosquee-mobile.jpg") 0 no-repeat fixed;}
 	#slide-3{background:url("img/slide/Tongariro-mobile.jpg") 0 no-repeat fixed;}
