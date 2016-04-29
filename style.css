@@ -196,6 +196,13 @@ a:hover#menu-icon {
 	background-position: center;
 }
 
+.thetest {height:300px;
+	width:100%;
+	position:relative;}
+#test{	height:300px;
+	width:100%;
+	}
+
 #slide-1{background:url("img/slide/Wakatipu.jpg") 0 no-repeat fixed;}
 #slide-2{background:url("img/slide/Mosquee.jpg") 0 no-repeat fixed;}
 #slide-3{background:url("img/slide/Tongariro.jpg") 0 no-repeat fixed;}
