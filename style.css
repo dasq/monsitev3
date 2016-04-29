@@ -342,7 +342,8 @@ font-size: 16px;
 	#social img {height: 20px; width:20px; }
 	#social ul {margin-top:0px;}
 	
-		/*NAV*/
+	/*NAV*/
+	#menu #brand {margin: 2px 5px auto 5px ; }
 	#menu-icon {	display:inline-block; background-size:40px 40px; width:40px; height:40px; margin: 10px 5px 10px 0px; }
 	nav ul, nav:active ul { 
 		display: none;
@@ -391,6 +392,7 @@ font-size: 16px;
 	.container{	padding: 10px 10px 20px 10px;}
 	
 	/*NAV*/
+	#menu #brand {margin: 2px 5px auto 5px ; }
 	#menu-icon {	display:inline-block;}
 	nav ul, nav:active ul { 
 		display: none;
@@ -439,6 +441,7 @@ font-size: 16px;
 	.container{	padding: 20px 20px 50px 20px;}
 	
 	/*NAV*/
+	#menu #brand {margin: 2px 10px auto 10px ; }
 	#menu-icon {	display:inline-block;}
 	nav ul, nav:active ul { 
 		display: none;
