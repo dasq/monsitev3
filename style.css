@@ -203,7 +203,7 @@ a:hover#menu-icon {
 #slide-3{background:url("img/slide/Tongariro.jpg") 0 no-repeat fixed;}
 #slide-4{background:url("img/slide/SandyBay.jpg") 0 no-repeat fixed;}
 #slide-5{background:url("img/slide/Camp.jpg") 0 no-repeat fixed;}
-
+#slide-6{background:url("img/slide/Fishing.jpg") 0 no-repeat fixed;}
 
 
 /*text box*/
@@ -385,6 +385,7 @@ font-size: 16px;
 	#slide-3{background:url("img/slide/Tongariro-mobile.jpg") 0 no-repeat fixed;}
 	#slide-4{background:url("img/slide/SandyBay-mobile.jpg") 0 no-repeat fixed;}
 	#slide-5{background:url("img/slide/Camp-mobile.jpg") 0 no-repeat fixed;}
+	#slide-6{background:url("img/slide/Fishing-mobile.jpg") 0 no-repeat fixed;}
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -434,7 +435,7 @@ font-size: 16px;
 	#slide-3{background:url("img/slide/Tongariro-mobile.jpg") 0 no-repeat fixed;}
 	#slide-4{background:url("img/slide/SandyBay-mobile.jpg") 0 no-repeat fixed;}
 	#slide-5{background:url("img/slide/Camp-mobile.jpg") 0 no-repeat fixed;}
-	
+	#slide-6{background:url("img/slide/Fishing-mobile.jpg") 0 no-repeat fixed;}
 }
 
 /* Between smartphones and tablets (portrait and landscape) ----------- */ 	
