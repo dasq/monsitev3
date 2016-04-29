@@ -343,7 +343,7 @@ font-size: 16px;
 	#social ul {margin-top:0px;}
 	
 		/*NAV*/
-	#menu-icon {	display:inline-block; height:40px; width:auto;}
+	#menu-icon {	display:inline-block; background-size:40px 40px; }
 	nav ul, nav:active ul { 
 		display: none;
 		position: absolute;
