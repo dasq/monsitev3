@@ -39,8 +39,8 @@ h3 {
 	color: #5C1417;
 	margin: 0;
 	padding: 0;
-	margin-bottom: 10px;
-	margin-top:10px;
+	margin-bottom: 20px;
+	margin-top:20px;
 }
 
 /* General links parameters */
@@ -112,6 +112,8 @@ h1 {
 	width:100%;
 	position: relative;
 	z-index: 10;
+	background-color: #540B0F;
+	opacity:0.95;
 }
 
 #menu {
@@ -202,8 +204,8 @@ a:hover#menu-icon {
 #slide-2{background:url("img/slide/Mosquee.jpg") 0 no-repeat fixed;}
 #slide-3{background:url("img/slide/Tongariro.jpg") 0 no-repeat fixed;}
 #slide-4{background:url("img/slide/SandyBay.jpg") 0 no-repeat fixed;}
-#slide-5{background:url("img/slide/Camp.jpg") 0 no-repeat fixed;}
-#slide-6{background:url("img/slide/Fishing.jpg") 0 no-repeat fixed;}
+#slide-5{background:url("img/slide/Fishing.jpg") 0 no-repeat fixed;}
+#slide-6{background:url("img/slide/Camp.jpg") 0 no-repeat fixed;}
 
 
 /*text box*/
@@ -315,8 +317,9 @@ font-size: 16px;
 
 /* Page about me*/
 #about-me {height:auto;}
-
-#about-me #busking {width:30%; height:auto;float:left;margin-right:50px; margin-bottom:50px;margin-top:30px;
+figcaption {font-size:10px;text-align:center;}
+#busking-container{float:left;width:30%; height:auto;margin-right:50px; margin-bottom:50px;margin-top:30px;}
+#about-me #busking {
 	-webkit-box-shadow: 0 0 65px #cdbe9f inset, 0 0 20px #beae8c inset, 0 0 5px #816f47;
 	-moz-box-shadow: 0 0 65px #cdbe9f inset, 0 0 20px #beae8c inset, 0 0 5px #816f47;
 	-ms-box-shadow: 0 0 65px #cdbe9f inset, 0 0 20px #beae8c inset, 0 0 5px #816f47;
@@ -324,7 +327,8 @@ font-size: 16px;
 	box-shadow: 0 0 65px #cdbe9f inset, 0 0 20px #beae8c inset, 0 0 5px #816f47;
 }
 
-#about-me #portrait {width:40%; height:auto;float:right;margin-left:50px; margin-bottom:50px;margin-top:10px;
+#portrait-container {width:40%; height:auto;float:right;margin-left:50px; margin-bottom:50px;margin-top:10px;}
+#about-me #portrait{
 	-webkit-box-shadow: 0 0 65px #cdbe9f inset, 0 0 20px #beae8c inset, 0 0 5px #816f47;
 	-moz-box-shadow: 0 0 65px #cdbe9f inset, 0 0 20px #beae8c inset, 0 0 5px #816f47;
 	-ms-box-shadow: 0 0 65px #cdbe9f inset, 0 0 20px #beae8c inset, 0 0 5px #816f47;
@@ -384,8 +388,8 @@ font-size: 16px;
 	#slide-2{background:url("img/slide/Mosquee-mobile.jpg") 0 no-repeat fixed;}
 	#slide-3{background:url("img/slide/Tongariro-mobile.jpg") 0 no-repeat fixed;}
 	#slide-4{background:url("img/slide/SandyBay-mobile.jpg") 0 no-repeat fixed;}
-	#slide-5{background:url("img/slide/Camp-mobile.jpg") 0 no-repeat fixed;}
-	#slide-6{background:url("img/slide/Fishing-mobile.jpg") 0 no-repeat fixed;}
+	#slide-5{background:url("img/slide/Fishing-mobile.jpg") 0 no-repeat fixed;}
+	#slide-6{background:url("img/slide/Camp-mobile.jpg") 0 no-repeat fixed;}
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -434,8 +438,8 @@ font-size: 16px;
 	#slide-2{background:url("img/slide/Mosquee-mobile.jpg") 0 no-repeat fixed;}
 	#slide-3{background:url("img/slide/Tongariro-mobile.jpg") 0 no-repeat fixed;}
 	#slide-4{background:url("img/slide/SandyBay-mobile.jpg") 0 no-repeat fixed;}
-	#slide-5{background:url("img/slide/Camp-mobile.jpg") 0 no-repeat fixed;}
-	#slide-6{background:url("img/slide/Fishing-mobile.jpg") 0 no-repeat fixed;}
+	#slide-5{background:url("img/slide/Fishing-mobile.jpg") 0 no-repeat fixed;}
+	#slide-6{background:url("img/slide/Camp-mobile.jpg") 0 no-repeat fixed;}
 }
 
 /* Between smartphones and tablets (portrait and landscape) ----------- */ 	
