@@ -272,7 +272,7 @@ color: #F0D4AE;
 font-size: 16px;
 }
 
-#mentions-legales {height: auto;}
+#mentions-legales {height: auto;background-image: url("img/background/content-bg-long.jpg");}
 
 /* Contact elements */
 #contact-boxes {text-align:center; margin: 0 auto; width:880px;}
@@ -316,7 +316,7 @@ font-size: 16px;
 #bandcamp-player {float:left; margin-right:80px;}
 
 /* Page about me*/
-#about-me {height:auto;}
+#about-me {height:auto;background-image: url("img/background/content-bg-long.jpg");}
 figcaption {font-size:10px;text-align:center;}
 #busking-container{float:left;width:30%; height:auto;margin-right:50px; margin-bottom:50px;margin-top:30px;}
 #about-me #busking {
@@ -391,6 +391,9 @@ figcaption {font-size:10px;text-align:center;}
 	#slide-4{background:url("img/slide/SandyBay-mobile.jpg") 0 no-repeat fixed;}
 	#slide-5{background:url("img/slide/Fishing-mobile.jpg") 0 no-repeat fixed;}
 	#slide-6{background:url("img/slide/Camp-mobile.jpg") 0 no-repeat fixed;}
+	
+	#mentions-legales {background-image: url("img/background/content-bg-mobile-long.jpg");}
+	#about-me {background-image: url("img/background/content-bg-mobile-long.jpg");}
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -442,6 +445,9 @@ figcaption {font-size:10px;text-align:center;}
 	#slide-4{background:url("img/slide/SandyBay-mobile.jpg") 0 no-repeat fixed;}
 	#slide-5{background:url("img/slide/Fishing-mobile.jpg") 0 no-repeat fixed;}
 	#slide-6{background:url("img/slide/Camp-mobile.jpg") 0 no-repeat fixed;}
+	
+	#mentions-legales {background-image: url("img/background/content-bg-mobile-long.jpg");}
+	#about-me {background-image: url("img/background/content-bg-mobile-long.jpg");}
 }
 
 /* Between smartphones and tablets (portrait and landscape) ----------- */ 	
