@@ -204,8 +204,9 @@ a:hover#menu-icon {
 #slide-2{background:url("img/slide/Mosquee.jpg") 0 no-repeat fixed;}
 #slide-3{background:url("img/slide/Tongariro.jpg") 0 no-repeat fixed;}
 #slide-4{background:url("img/slide/SandyBay.jpg") 0 no-repeat fixed;}
-#slide-5{background:url("img/slide/Fishing.jpg") 0 no-repeat fixed;}
-#slide-6{background:url("img/slide/Camp.jpg") 0 no-repeat fixed;}
+#slide-5{background:url("img/slide/Volcano.jpg") 0 no-repeat fixed;}
+#slide-6{background:url("img/slide/Fishing.jpg") 0 no-repeat fixed;}
+#slide-7{background:url("img/slide/Camp.jpg") 0 no-repeat fixed;}
 
 
 /*text box*/
@@ -231,7 +232,7 @@ a:hover#menu-icon {
 	width: auto;
 	margin: 0 auto;
 	overflow:hidden;
-	padding: 50px 80px 80px 80px;
+	padding: 50px 80px 30px 80px;
 	position:relative;
 	margin-top: 0px;
 	text-align: left;
@@ -249,6 +250,7 @@ a:hover#menu-icon {
 
 #Farid-Cartoon {width: 50%; height:auto; float:right;}
 #about p{ width:100%; height:auto; }
+#videos p {text-align: center;}
 
 .box-tour {
 	height:100%;
@@ -271,6 +273,10 @@ background-color: #510C0F;
 color: #F0D4AE;
 font-size: 16px;
 }
+
+.fb-share {text-align:right; clear:both; padding-top:30px;}
+.fb-share a {padding-bottom:10px; clear:both; background-color: #0A9076; border: 0 none; border-radius:4px; color: white; cursor: pointer; display: inline-block; font-size:15px; height: 32px; line-height: 32px; margin: 10px 5px 10px 0; padding:0; padding-left:5px; padding-right:5px; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto;}
+.fb-share a:hover {background-color:#0DC3A0;font-size:16px;}
 
 #mentions-legales {height: auto;background-image: url("img/background/content-bg-long.jpg");}
 
@@ -315,10 +321,33 @@ font-size: 16px;
 
 #bandcamp-player {float:left; margin-right:80px;}
 
+/* List of social networks*/
+#social-contact {
+height: 70px; 
+width:100%;
+opacity:1;
+text-align: center;
+clear:both;
+display:inline;
+}
+
+#social-contact ul {}
+
+#social-contact li {
+	display: inline;
+	margin-left: 1%;
+	margin-right: 1%;
+	}
+
+#social-contact img {height: 60px; width:60px; }
+
+#social-contact a {opacity:1;}
+#social-contact a:hover {opacity:1;}
+
 /* Page about me*/
 #about-me {height:auto;background-image: url("img/background/content-bg-long.jpg");}
 figcaption {font-size:10px;text-align:center;}
-#busking-container{float:left;width:30%; height:auto;margin-right:50px; margin-bottom:50px;margin-top:30px;}
+#busking-container{float:left;width:30%; height:auto;margin-right:50px; margin-bottom:10px;margin-top:10px;}
 #about-me #busking {
 	-webkit-box-shadow: 0 0 65px #cdbe9f inset, 0 0 20px #beae8c inset, 0 0 5px #816f47;
 	-moz-box-shadow: 0 0 65px #cdbe9f inset, 0 0 20px #beae8c inset, 0 0 5px #816f47;
@@ -327,7 +356,7 @@ figcaption {font-size:10px;text-align:center;}
 	box-shadow: 0 0 65px #cdbe9f inset, 0 0 20px #beae8c inset, 0 0 5px #816f47;
 }
 
-#portrait-container {width:40%; height:auto;float:right;margin-left:50px; margin-bottom:50px;margin-top:10px;}
+#portrait-container {width:40%; height:auto;float:right;margin-left:50px; margin-bottom:10px;margin-top:10px;}
 #about-me #portrait{
 	-webkit-box-shadow: 0 0 65px #cdbe9f inset, 0 0 20px #beae8c inset, 0 0 5px #816f47;
 	-moz-box-shadow: 0 0 65px #cdbe9f inset, 0 0 20px #beae8c inset, 0 0 5px #816f47;
@@ -391,8 +420,9 @@ figcaption {font-size:10px;text-align:center;}
 	#slide-2{background:url("img/slide/Mosquee-mobile.jpg") 0 no-repeat fixed;}
 	#slide-3{background:url("img/slide/Tongariro-mobile.jpg") 0 no-repeat fixed;}
 	#slide-4{background:url("img/slide/SandyBay-mobile.jpg") 0 no-repeat fixed;}
-	#slide-5{background:url("img/slide/Fishing-mobile.jpg") 0 no-repeat fixed;}
-	#slide-6{background:url("img/slide/Camp-mobile.jpg") 0 no-repeat fixed;}
+	#slide-5{background:url("img/slide/Volcano-mobile.jpg") 0 no-repeat fixed;}
+	#slide-6{background:url("img/slide/Fishing-mobile.jpg") 0 no-repeat fixed;}
+	#slide-7{background:url("img/slide/Camp-mobile.jpg") 0 no-repeat fixed;}
 	
 	#mentions-legales {background-image: url("img/background/content-bg-mobile-long.jpg");}
 	#about-me {background-image: url("img/background/content-bg-mobile-long.jpg");}
@@ -445,8 +475,9 @@ figcaption {font-size:10px;text-align:center;}
 	#slide-2{background:url("img/slide/Mosquee-mobile.jpg") 0 no-repeat fixed;}
 	#slide-3{background:url("img/slide/Tongariro-mobile.jpg") 0 no-repeat fixed;}
 	#slide-4{background:url("img/slide/SandyBay-mobile.jpg") 0 no-repeat fixed;}
-	#slide-5{background:url("img/slide/Fishing-mobile.jpg") 0 no-repeat fixed;}
-	#slide-6{background:url("img/slide/Camp-mobile.jpg") 0 no-repeat fixed;}
+	#slide-5{background:url("img/slide/Volcano-mobile.jpg") 0 no-repeat fixed;}
+	#slide-6{background:url("img/slide/Fishing-mobile.jpg") 0 no-repeat fixed;}
+	#slide-7{background:url("img/slide/Camp-mobile.jpg") 0 no-repeat fixed;}
 	
 	#mentions-legales {background-image: url("img/background/content-bg-mobile-long.jpg");}
 	#about-me {background-image: url("img/background/content-bg-mobile-long.jpg");}
