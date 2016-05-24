@@ -250,7 +250,7 @@ a:hover#menu-icon {
 
 #Farid-Cartoon {width: 50%; height:auto; float:right;}
 #about p{ width:100%; height:auto; }
-#videos p {text-align: center;}
+#videos {text-align: center; margin: 0 auto;}
 
 .box-tour {
 	height:100%;
