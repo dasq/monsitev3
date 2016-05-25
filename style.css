@@ -262,7 +262,7 @@ font-size: 16px;
 .fb-share a {padding-bottom:10px; clear:both; background-color: #0A9076; border: 0 none; border-radius:4px; color: white; cursor: pointer; display: inline-block; font-size:15px; height: 32px; line-height: 32px; margin: 10px 5px 10px 0; padding:0; padding-left:5px; padding-right:5px; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto;}
 .fb-share a:hover {background-color:#0DC3A0;font-size:16px;}
 
-#mentions-legales {height: auto;background-image: url("img/background/content-bg-long.jpg");}
+#mentions-legales {height: auto;background-image: url("img/background/content-bg-long.jpg");background-size:100% auto;background-repeat: repeat-y;}
 
 /* Contact elements */
 #contact-boxes {text-align:center; margin: 0 auto; width:880px;}
@@ -306,6 +306,8 @@ font-size: 16px;
 #bandcamp-player {float:left; margin-right:80px;}
 
 /* List of social networks*/
+#contact-boxes{display: table;}
+.contact-cell{display: table-cell;}
 #social-contact {
 height: 70px; 
 width:100%;
@@ -324,6 +326,7 @@ padding-top:30px;
 #social-contact img {height: 60px; width:60px; }
 #social-contact a {opacity:0.9;}
 #social-contact a:hover {opacity:1;}
+#social-break{display: block;}
 
 /* Page about me*/
 #about-me {height:auto;background-image: url("img/background/content-bg-long.jpg");}
@@ -406,7 +409,7 @@ figcaption {font-size:10px;text-align:center;}
 	#slide-6{background:url("img/slide/Fishing-mobile.jpg") 0 no-repeat fixed;}
 	#slide-7{background:url("img/slide/Camp-mobile.jpg") 0 no-repeat fixed;}
 	
-	#mentions-legales {background-image: url("img/background/content-bg-mobile-long.jpg");}
+	#mentions-legales {background-image: url("img/background/content-bg-mobile-long.jpg"); }
 	#about-me {background-image: url("img/background/content-bg-mobile-long.jpg");}
 }
 
@@ -493,6 +496,7 @@ figcaption {font-size:10px;text-align:center;}
 		text-align:center;
 		margin:0 auto;
 	}
+
 	
 	/*MENU*/
 	#menu h1 {font-size : 36px;}

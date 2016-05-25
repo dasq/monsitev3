@@ -97,7 +97,7 @@ permalink: /404.html
 						<li class="icon">
 							<a href="javascript:void(0);" onclick="myFunction()">Menu &#9776;</a>
 						</li>
-						<li><a class="smoothScroll" href="index.html#about-link">Back to my world</a></li>
+						<li><a class="smoothScroll" href="index.html#about-link">&#8592; Back</a></li>
 					</ul>
 				</nav>
 			</div>		
@@ -118,9 +118,13 @@ permalink: /404.html
 		
 		<!-- Footnote -->
 		<footer id="footnote">
-		© Copyright 2016 Farid Ben Miles | <a href="mentions.html" target="_blank">Mentions légales</a> 
+		© Copyright 2016 Farid Ben Miles | <a href="mentions.html">Mentions légales</a> 
 		</footer>
-	
+		<script>
+			function myFunction() {
+			document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+			}
+		</script>
 	</body>	
 	
 </html>

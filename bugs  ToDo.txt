@@ -1,4 +1,2 @@
-1. menu bar to refit (left not fitting on Safari)
-2.? header picture to not full screen cover on small devices? (review javascript & media queries) ?
-3. review media queries to better accuracy (height, handled, orientation...)
+1. review media queries to better accuracy (height, handled, orientation...)
 
