@@ -47,9 +47,30 @@ permalink: /404.html
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 		
 		<!-- JS -->
-		<script src="js/jquery-1.11.3.min.js"></script>
+		
+		<script src="js/jquery-1.12.4.min.js"></script>
+
+		
 		<!-- All js -->
 		<script src="js/one.js"></script>
+		
+		<script>
+			/**
+			* Dynamic Header
+			*/	
+			function jsUpdateSize(){
+			// Get the dimensions of the viewport
+			var height = window.innerHeight ||
+						 document.documentElement.clientHeight ||
+						 document.body.clientHeight;
+						 
+			var heightBanner = height - 60;
+			//change the value of the height
+			$("header").css({"height": heightBanner,}); 
+			};
+			window.onload = jsUpdateSize;       // When the page first loads
+			window.onresize = jsUpdateSize;     // When the browser changes size
+		</script>
     </head>
 	
 	<body>
@@ -72,8 +93,10 @@ permalink: /404.html
 			<div id="menu" class="fixed-nav-bar">
 				<div id="brand-link"><a href="#social" class="smoothScroll"><img id="brand" alt="Farid Ben Miles - Logo" src="img/logo/logo-head-white.png"/><h1>Farid Ben Miles</h1></a></div>
 				<nav>
-					<div id="menu-icon"></div>
-					<ul>
+					<ul class="topnav">
+						<li class="icon">
+							<a href="javascript:void(0);" onclick="myFunction()">Menu &#9776;</a>
+						</li>
 						<li><a class="smoothScroll" href="index.html#about-link">Back to my world</a></li>
 					</ul>
 				</nav>

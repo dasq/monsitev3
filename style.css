@@ -148,6 +148,7 @@ nav li{
 	margin-left: 1%;
 	margin-right: 1%;
 }
+ul li.icon {display: none;}
 
 /* General parameters of the menu titles */
 #menu-container #menu nav ul li a:link { color: #FFF; opacity:1; font-size: 26px; font-family: Amatic,'Source Sans Pro', sans-serif; border-bottom: 0px none; text-decoration:none; }
@@ -158,23 +159,6 @@ nav li{
 /*  Parameters of the menu titles when the title have been clicked on*/
 #menu-container #menu nav ul li a:active { color: #0a9076; opacity:1; border-bottom: 2px solid #fff; text-decoration:none;}
 
-
-nav select {display:none;}
-
-#menu-icon {
-	display: none;
-	width: 50px;
-	height: 50px;
-	background: url("img/menu-icon.png") ;
-	margin: auto;
-	margin-right: 10px;
-	float:right;
-}
-
-a:hover#menu-icon {
-	background-color: #444;
-	border-radius: 4px 4px 0 0;
-}
 
 #music:before { 
   display: block; 
@@ -378,28 +362,28 @@ figcaption {font-size:10px;text-align:center;}
 	
 	/*NAV*/
 	#menu #brand {margin: 2px 5px auto 5px ; }
-	#menu-icon {	display:inline-block; background-size:40px 40px; width:40px; height:40px; margin: 10px 5px 10px 0px; }
-	nav ul, nav:active ul { 
-		display: none;
-		position: absolute;
+	/*NAV when menu button not clicked*/
+	ul.topnav li:not(:first-child) {display: none;}
+	ul.topnav li.icon {
+	float: right;
+    display: inline-block;
+	}
+	/*NAV when menu button IS clicked*/
+	ul.topnav.responsive {position: relative; width:90px; margin:0;float:right;}
+	nav ul.topnav.responsive li { 
+		float:none;
+		display:block;
 		background: #540B0F;
-		border: 5px solid #444;
-		right: 0px;
-		top: 60px;
-		width: 30%;
-		border-radius: 4px 0 4px 4px;
+		margin:0 auto;
+		text-align:center;
 	}
-	nav li {
-		text-align: center;
-		width: 100%;
-		padding: 10px 0;
-		margin: 0;
+	nav ul.topnav.responsive li:not(:first-child) { height:50px; line-height:50px;}
+	nav ul.topnav.responsive li a { 
+		text-align:center;
+		margin:0 auto;
 	}
-	nav:hover ul {display: block; }
 	
 	/*MENU*/
-	nav ul {display:none;}
-	nav select  {display: inline-block;}
 	#menu h1 {font-size : 26px;}
 
 	
@@ -434,28 +418,28 @@ figcaption {font-size:10px;text-align:center;}
 	
 	/*NAV*/
 	#menu #brand {margin: 2px 5px auto 5px ; }
-	#menu-icon {	display:inline-block;}
-	nav ul, nav:active ul { 
-		display: none;
-		position: absolute;
+	/*NAV when menu button not clicked*/
+	ul.topnav li:not(:first-child) {display: none;}
+	ul.topnav li.icon {
+	float: right;
+    display: inline-block;
+	}
+	/*NAV when menu button IS clicked*/
+	ul.topnav.responsive {position: relative; width:90px; margin:0;float:right;}
+	nav ul.topnav.responsive li { 
+		float:none;
+		display:block;
 		background: #540B0F;
-		border: 5px solid #444;
-		right: 0px;
-		top: 60px;
-		width: 30%;
-		border-radius: 4px 0 4px 4px;
+		margin:0 auto;
+		text-align:center;
 	}
-	nav li {
-		text-align: center;
-		width: 100%;
-		padding: 10px 0;
-		margin: 0;
+	nav ul.topnav.responsive li:not(:first-child) { height:50px; line-height:50px;}
+	nav ul.topnav.responsive li a { 
+		text-align:center;
+		margin:0 auto;
 	}
-	nav:hover ul {display: block; }
 	
 	/*MENU*/
-	nav ul {display:none;}
-	nav select  {display: inline-block;}
 	#menu h1 {font-size : 36px;}
 
 	
@@ -488,25 +472,30 @@ figcaption {font-size:10px;text-align:center;}
 	.container{	padding: 20px 20px 50px 20px;}
 	
 	/*NAV*/
-	#menu #brand {margin: 2px 10px auto 10px ; }
-	#menu-icon {	display:inline-block;}
-	nav ul, nav:active ul { 
-		display: none;
-		position: absolute;
+	#menu #brand {margin: 2px 5px auto 5px ; }
+	/*NAV when menu button not clicked*/
+	ul.topnav li:not(:first-child) {display: none;}
+	ul.topnav li.icon {
+	float: right;
+    display: inline-block;
+	}
+	/*NAV when menu button IS clicked*/
+	ul.topnav.responsive {position: relative; width:90px; margin:0;float:right;}
+	nav ul.topnav.responsive li { 
+		float:none;
+		display:block;
 		background: #540B0F;
-		border: 5px solid #444;
-		right: 0px;
-		top: 60px;
-		width: 30%;
-		border-radius: 4px 0 4px 4px;
+		margin:0 auto;
+		text-align:center;
 	}
-	nav li {
-		text-align: center;
-		width: 100%;
-		padding: 10px 0;
-		margin: 0;
+	nav ul.topnav.responsive li:not(:first-child) { height:50px; line-height:50px;}
+	nav ul.topnav.responsive li a { 
+		text-align:center;
+		margin:0 auto;
 	}
-	nav:hover ul {display: block; }
+	
+	/*MENU*/
+	#menu h1 {font-size : 36px;}
 	
 	/*Music*/
 	#player-container,.players, #music iframe {width:350px;}

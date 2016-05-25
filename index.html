@@ -37,13 +37,31 @@
 		<!--[if lt IE 9]><script src="http://github.com/aFarkas/html5shiv/blob/master/dist/html5shiv.js"></script><![endif]-->
 		
 		<!-- CSS -->
-		
+		<link rel="stylesheet" href="style.css">
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 		
-		<!-- JS -->
-		<script src="js/jquery-1.11.3.min.js"></script>
+		<!-- JQUERY -->		
+		<script src="js/jquery-1.12.4.min.js"></script>
 		<!-- All js -->
-		<script async src="js/one.js"></script>
+		<script src="js/one.js"></script>
+		
+		<script>
+			/**
+			* Dynamic Header
+			*/	
+			function jsUpdateSize(){
+			// Get the dimensions of the viewport
+			var height = window.innerHeight ||
+						 document.documentElement.clientHeight ||
+						 document.body.clientHeight;
+						 
+			var heightBanner = height - 60;
+			//change the value of the height
+			$("header").css({"height": heightBanner,}); 
+			};
+			window.onload = jsUpdateSize;       // When the page first loads
+			window.onresize = jsUpdateSize;     // When the browser changes size
+		</script>
     </head>
 	
 	<body>
@@ -67,8 +85,10 @@
 				<div id="brand-link"><a href="#social" class="smoothScroll"><img id="brand" alt="Farid Ben Miles - Logo" src="img/logo/logo-head-white.png"/><h1>Farid Ben Miles</h1></a></div>
 				
 				<nav>
-					<div id="menu-icon"></div>
-					<ul>
+					<ul class="topnav">
+						<li class="icon">
+							<a href="javascript:void(0);" onclick="myFunction()">Menu &#9776;</a>
+						</li>
 						<li><a class="smoothScroll" href="#about-link">About</a></li>
 						<li><a class="smoothScroll" href="#music-link">Music</a></li>
 						<li><a class="smoothScroll" href="#videos-link">Videos</a></li>
@@ -146,7 +166,7 @@
 				<h2> My videos </h2>
 				<h3>Traditions - My first video from my first CD</h3>
 				<div id="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/_30K8Bei_iI" frameborder="0" allowfullscreen></iframe></div>
-				<p>Make sure to subscribe on my <a href="https://www.youtube.com/channel/UC56Ud4a-E0FGQVqc9SUqksg?sub_confirmation=1" target="_blank">Youtube channel</a> to be the first to know when new videos are coming.</p>
+				<p>Make sure to subscribe on my <a href="https://www.youtube.com/channel/UC56Ud4a-E0FGQVqc9SUqksg?sub_confirmation=1" target="_blank">Youtube channel</a> to be the first one to know when new videos are posted.</p>
 			</div>
 			<div class="fb-share">
 			<a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=http://www.faridbenmiles.com/index.html#videos-link">Share on Facebook</a>
@@ -187,9 +207,9 @@
 				<div class="box">
 					<h2> My tour dates </h2>
 					
-					<!-- Songkick Tourbox -->
+					<!-- Songkick Tourbox 
 					<a href="http://www.songkick.com/artists/8780859" class="songkick-widget" data-theme="light" data-track-button="on" data-detect-style="true" data-font-color="#5C1417" data-background-color="transparent"></a>
-					<script src="//widget.songkick.com/widget.js"></script>
+					<script src="//widget.songkick.com/widget.js"></script>-->
 
 				</div>
 			</div>
@@ -260,8 +280,11 @@
 		<footer id="footnote">
 		© Copyright 2016 Farid Ben Miles | <a href="mentions.html" target="_blank">Mentions légales</a> 
 		</footer>
-	
+	<script>
+        function myFunction() {
+    document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+}
+    </script>
 	</body>	
 	
 </html>
-<link rel="stylesheet" href="style.css">
