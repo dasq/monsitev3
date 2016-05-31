@@ -372,17 +372,17 @@ figcaption {font-size:10px;text-align:center;}
 	ul.topnav li.icon {
 	float: right;
     display: inline-block;
+	height:60px;
 	}
 	/*NAV when menu button IS clicked*/
 	ul.topnav.responsive {position: relative; width:90px; margin:0;float:right;}
 	nav ul.topnav.responsive li { 
 		float:none;
 		display:block;
-		background: #540B0F;
 		margin:0 auto;
 		text-align:center;
 	}
-	nav ul.topnav.responsive li:not(:first-child) { height:50px; line-height:50px;}
+	nav ul.topnav.responsive li:not(:first-child) { height:50px; line-height:50px;opacity:1.95;background: #520A0E}
 	nav ul.topnav.responsive li a { 
 		text-align:center;
 		margin:0 auto;
@@ -428,17 +428,17 @@ figcaption {font-size:10px;text-align:center;}
 	ul.topnav li.icon {
 	float: right;
     display: inline-block;
-	}
+	height:60px;
+}
 	/*NAV when menu button IS clicked*/
 	ul.topnav.responsive {position: relative; width:90px; margin:0;float:right;}
 	nav ul.topnav.responsive li { 
 		float:none;
 		display:block;
-		background: #540B0F;
 		margin:0 auto;
 		text-align:center;
 	}
-	nav ul.topnav.responsive li:not(:first-child) { height:50px; line-height:50px;}
+	nav ul.topnav.responsive li:not(:first-child) { height:50px; line-height:50px;opacity:1.95;background: #520A0E}
 	nav ul.topnav.responsive li a { 
 		text-align:center;
 		margin:0 auto;
@@ -483,17 +483,17 @@ figcaption {font-size:10px;text-align:center;}
 	ul.topnav li.icon {
 	float: right;
     display: inline-block;
+	height:60px;
 	}
 	/*NAV when menu button IS clicked*/
-	ul.topnav.responsive {position: relative; width:90px; margin:0;float:right;}
+	ul.topnav.responsive {position: relative; width:90px; margin:0;float:right;z-index:1;}
 	nav ul.topnav.responsive li { 
 		float:none;
 		display:block;
-		background: #540B0F;
 		margin:0 auto;
 		text-align:center;
 	}
-	nav ul.topnav.responsive li:not(:first-child) { height:50px; line-height:50px;}
+	nav ul.topnav.responsive li:not(:first-child) { height:50px; line-height:50px;opacity:1.95;background: #520A0E;}
 	nav ul.topnav.responsive li a { 
 		text-align:center;
 		margin:0 auto;
