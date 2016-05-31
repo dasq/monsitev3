@@ -285,6 +285,8 @@ font-size: 16px;
 #mc_embed_signup input.email:focus {background: rgba(255,255,255,0.9);}
 #mc_embed_signup input.button {display:block; width:35%; min-width:90px;margin:auto;}
 
+#contact-other a {padding-bottom:10px; clear:both; background-color: #0A9076; border: 0 none; border-radius:4px; color: white; cursor: pointer; display: inline-block; font-size:15px; height: 32px; line-height: 32px; margin: 10px 5px 10px 0; padding:0; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: 200px;}
+#contact-other a:hover {background-color:#0DC3A0;font-size:16px;}
 
 /* Slide effect for photos */
 #pictures iframe {
