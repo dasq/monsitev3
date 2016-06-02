@@ -219,7 +219,6 @@ ul li.icon {display: none;}
 	padding: 50px 80px 30px 80px;
 	position:relative;
 	margin-top: 0px;
-	text-align: left;
 	text-align: justify;
 	text-justify: inter-word;
 	-moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.9);
@@ -390,12 +389,13 @@ figcaption {font-size:10px;text-align:center;}
 	
 	/*MENU*/
 	#menu h1 {font-size : 26px;}
-
-	
+	/*ABOUT*/
+	.container .box-about{text-align: left;}
 	/*Music*/
 	#player-container,.players, #music iframe {width:200px;}
 	.players {clear:both; }
-
+	/* Video */
+	#videos iframe{width:220px; height:123.75px; }
 	/*Flickr slider*/
 	#flickr, #pictures iframe{width:250px; height:166.5px;}
 	
@@ -413,6 +413,9 @@ figcaption {font-size:10px;text-align:center;}
 	
 	#mentions-legales {background-image: url("img/background/content-bg-mobile-long.jpg"); }
 	#about-me {background-image: url("img/background/content-bg-mobile-long.jpg");}
+	
+	/* Facebook Share button */
+	.fb-share {text-align:center;}
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -446,12 +449,13 @@ figcaption {font-size:10px;text-align:center;}
 	
 	/*MENU*/
 	#menu h1 {font-size : 36px;}
-
-	
+	/*ABOUT*/
+	.container .box-about{text-align: left;}
 	/*Music*/
 	#player-container,.players, #music iframe {width:250px;}
 	.players {clear:both; }
-
+	/* Video */
+	#videos iframe{width:250px; height:140.6px; }
 	/*Flickr slider*/
 	#flickr, #pictures iframe{width:250px; height:166.5px;}
 	
@@ -470,6 +474,9 @@ figcaption {font-size:10px;text-align:center;}
 	
 	#mentions-legales {background-image: url("img/background/content-bg-mobile-long.jpg");}
 	#about-me {background-image: url("img/background/content-bg-mobile-long.jpg");}
+	
+	/* Facebook Share button */
+	.fb-share {text-align:center;}
 }
 
 /* Between smartphones and tablets (portrait and landscape) ----------- */ 	
@@ -502,15 +509,19 @@ figcaption {font-size:10px;text-align:center;}
 	
 	/*MENU*/
 	#menu h1 {font-size : 36px;}
-	
+	/*ABOUT*/
+	.container .box-about{text-align: left;}
 	/*Music*/
 	#player-container,.players, #music iframe {width:350px;}
 	.players {clear:both; }
+	/* Video */
+	#videos iframe{width:400px; height:225px; }
 	/*Flickr slider*/
 	#flickr, #pictures iframe{width:351px; height:233px;}
 	/* Contact elements */
 	#contact-fb,#contact-newsletter, #contact-other,#contact-boxes {width:300px;}
-	
+	/* Facebook Share button */
+	.fb-share {text-align:center;}
 }
 
 /* Tablets (portrait and landscape) ----------- */
@@ -520,9 +531,8 @@ figcaption {font-size:10px;text-align:center;}
 	#player-container{width:400px;}
 	.players {clear:both; }
 	/*Flickr slider*/
-	#flickr, #pictures iframe{width:400px; height:266px;}
+	#flickr, #pictures iframe{width:500px; height:331.9px;}
+	
 	/* Contact elements */
 	#contact-fb,#contact-newsletter, #contact-other,#contact-boxes {width:400px;}
-	
-
-}
+	}

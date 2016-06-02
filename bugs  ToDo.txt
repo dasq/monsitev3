@@ -1,5 +1,2 @@
 1. review media queries to better accuracy (height, handled, orientation...)
 2. align contact section
-3. text-align weird on mobiles
-4. FB-share button to center on mobiles
-5. color menu mobiles different from menu bar 
