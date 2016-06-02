@@ -176,7 +176,7 @@ ul li.icon {display: none;}
 	-webkit-background-size: cover; 
 	-moz-background-size: cover; 
 	-o-background-size: cover; 
-    background-size: auto cover;
+    background-size: cover;
 	color: white;
 	margin: 0 auto;
 	padding: 0;
