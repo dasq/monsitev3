@@ -318,7 +318,7 @@ clear:both;
 display:inline-block;
 padding-top:30px;
 }
-#social-contact ul {padding-left:0px;}
+#social-contact ul {padding-left:0px;overflow: hidden;}
 #social-contact li {
 	display: inline-block;
 	margin-left: 1%;
