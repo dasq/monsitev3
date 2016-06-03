@@ -329,7 +329,7 @@ padding-top:30px;
 #social-contact img {height: 60px; width:60px; }
 #social-contact a {opacity:0.9;}
 #social-contact a:hover {opacity:1;}
-#social-break{display: block;}
+#social-break{display: block; page-break-after: always;}
 
 /* Page about me*/
 #about-me {height:auto;background-image: url("img/background/content-bg-long.jpg");}
