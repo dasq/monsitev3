@@ -72,72 +72,6 @@
 			window.onresize = jsUpdateSize;     // When the browser changes size
 		</script>
 
-<style>
-    .youtube-player {
-        position: relative;
-        padding-bottom: 56.23%;
-        /* Use 75% for 4:3 videos */
-        height: 0;
-        overflow: hidden;
-        max-width: 100%;
-        background: #000;
-        margin: 5px;
-    }
-	
-	.soundcloud-player {
-        position: relative;
-        height: 400px;
-        overflow: hidden;
-        width: 100%;
-        background: #000;
-        margin: 5px;
-    }
-    
-    .youtube-player iframe, .soundcloud-player iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 100;
-        background: transparent;
-    }
-    
-    .youtube-player img, .soundcloud-player img {
-        bottom: 0;
-        display: block;
-        left: 0;
-        margin: auto;
-        max-width: 100%;
-        width: 100%;
-        position: absolute;
-        right: 0;
-        top: 0;
-        border: none;
-        height: auto;
-        cursor: pointer;
-        -webkit-transition: .4s all;
-        -moz-transition: .4s all;
-        transition: .4s all;
-    }
-    
-    .youtube-player img:hover, .soundcloud-player img:hover{
-        -webkit-filter: brightness(75%);
-    }
-    
-    .youtube-player .play, .soundcloud-player .play{
-        height: 72px;
-        width: 72px;
-        left: 50%;
-        top: 50%;
-        margin-left: -36px;
-        margin-top: -36px;
-        position: absolute;
-        background: url("//i.imgur.com/TxzC70f.png") no-repeat;
-        cursor: pointer;
-    }
- 
-</style>
     </head>
 	
 	<body>
@@ -182,20 +116,22 @@
 		<section id="videos" class="container">
 			<div class="box">
 				<h2> My videos </h2>
-				<div id="traditions" class="box-video">
-					<h3>Traditions</h3>
-					<h4>A powerful song in the image of the importance of traditions</h4>
-					<div class="youtube-player" data-id="_30K8Bei_iI"></div>
-					<div class="fb-share-video">
-						<a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=https://www.youtube.com/watch?v=_30K8Bei_iI">Share on Facebook</a>
+				<div id="player-container">
+					<div id="traditions" class="box-video">
+						<h3>Traditions</h3>
+						<h4>A powerful song in the image of the importance of traditions</h4>
+						<div class="youtube-player" data-id="_30K8Bei_iI"></div>
+						<div class="fb-share-video">
+							<a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=https://www.youtube.com/watch?v=_30K8Bei_iI">Share on Facebook</a>
+						</div>
 					</div>
-				</div>
-				<div id="tradivan" class="box-video">
-					<h3>Tradivan (Caravan / Misirlou)</h3> 
-					<h4>A travel in the middle of Oriental culture and a musical history</h4>
-					<div class="youtube-player" data-id="vXUznxv0qF0"></div>
-					<div class="fb-share-video">
-						<a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=https://www.youtube.com/watch?v=_30K8Bei_iI">Share on Facebook</a>
+					<div id="tradivan" class="box-video">
+						<h3>Tradivan (Caravan / Misirlou)</h3> 
+						<h4>A travel in the middle of Oriental culture and a musical history</h4>
+						<div class="youtube-player" data-id="vXUznxv0qF0"></div>
+						<div class="fb-share-video">
+							<a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=https://www.youtube.com/watch?v=_30K8Bei_iI">Share on Facebook</a>
+						</div>
 					</div>
 				</div>
 				<p><br>More videos will be uploaded soon! Subscribe on my <a href="https://www.youtube.com/channel/UC56Ud4a-E0FGQVqc9SUqksg?sub_confirmation=1" target="_blank">Youtube channel</a> <br>to be the first one to know when new videos are available.</p>
@@ -239,13 +175,13 @@
 					<div id="bandcamp-player" class="players">
 						<h3>Album "Going Overseas" - Coming Soon</h3>
 						<p>I am happy to present you <br>a first track of my CD "<b>Going Overseas</b>".<br>The release date will be announced soon.</p><br>
-						<div class="soundcloud-player" data-id="208868711"></div>
+						<div class="iframe-container"><div id="album-sc" class="soundcloud-player" data-id="208868711"></div></div>
 						<!--<iframe scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/128342976%3Fsecret_token%3Ds-qesPa&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>-->
 					</div>
 					<div id="soundcloud-player" class="players">
 						<h3>Demos of the album "Going Overseas"</h3>
 						<p>The authentic demos of "<b>Going Overseas</b>" recorded during my travel (in my van, on the beach, at friends) + Bonus</p><br>
-						<div class="soundcloud-player" data-id="128342976"></div>
+						<div class="iframe-container"><div id="demos-sc" class="soundcloud-player" data-id="128342976"></div></div>
 					</div>
 				</div>
 				

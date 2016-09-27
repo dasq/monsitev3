@@ -249,7 +249,7 @@ ul li.icon {display: none;}
 #videos {text-align: center; margin: 0 auto;}
 
 .box-video {width: 400px; display:inline-block; margin: 0 auto; }
-#traditions {margin-right:80px;}
+#traditions {float: left;}
 .fb-share-video {}
 .fb-share-video a {padding-bottom:10px; clear:both; background-color: #0A9076; border: 0 none; border-radius:4px; color: white; cursor: pointer; display: inline-block; font-size:15px; height: 32px; line-height: 32px; margin: 10px 5px 10px 0; padding:0; padding-left:5px; padding-right:5px; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto;}
 .fb-share-video a:hover {background-color:#0DC3A0;font-size:16px;}
@@ -357,6 +357,78 @@ padding-top:30px;
 #social-contact a {opacity:0.9;}
 #social-contact a:hover {opacity:1;}
 #social-break{display: block;}
+
+/*iframe YT & SC players */
+.youtube-player {
+        position: relative;
+        padding-bottom: 56.23%;
+        /* Use 75% for 4:3 videos */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        background: #000;
+        margin: 5px;
+    }
+
+.iframe-container{height:450px; width:100%;}
+.soundcloud-player {
+	position: relative;
+	height: 450px;
+	overflow: hidden;
+	width: 100%;
+	background: #000;
+	margin: 5px;
+}
+#album-sc{background-image:url("img/208868711-sc.png");
+background-size:cover;}
+#demos-sc {
+background-image:url("img/128342976-sc.png");
+background-size:cover;
+}
+
+.youtube-player iframe, .soundcloud-player iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	background: transparent;
+}
+
+.youtube-player img, .soundcloud-player img {
+	bottom: 0;
+	display: block;
+	left: 0;
+	margin: auto;
+	max-width: 100%;
+	width: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	border: none;
+	height: auto;
+	cursor: pointer;
+	-webkit-transition: .4s all;
+	-moz-transition: .4s all;
+	transition: .4s all;
+}
+
+.youtube-player img:hover, .soundcloud-player img:hover{
+	-webkit-filter: brightness(75%);
+}
+
+.youtube-player .play, .soundcloud-player .play{
+	height: 72px;
+	width: 72px;
+	left: 50%;
+	top: 50%;
+	margin-left: -36px;
+	margin-top: -36px;
+	position: absolute;
+	background: url("//i.imgur.com/TxzC70f.png") no-repeat;
+	cursor: pointer;
+}
 
 /* Page about me*/
 #about-me {height:auto;background-image: url("img/background/content-bg-long.jpg");}

@@ -325,7 +325,7 @@ jQuery(function($){ $.localScroll({filter:'.smoothScroll'}); });
         });
 	
 	function labnolThumbSC(id) {
-		var thumb = '<img src="img/ID-sc.png">',
+		var thumb = '<img src="img/0.png">',
             play = '<div class="play"></div>';        
         return thumb.replace("ID", id) + play;
     }
