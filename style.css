@@ -43,6 +43,18 @@ h3 {
 	margin-top:20px;
 }
 
+h4 {
+	font: 20px Roboto,'Source Sans Pro', Georgia, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 20px;
+	text-align: center;
+	color: #5C1417;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 10px;
+}
+
 /* General links parameters */
 a { color: #0a9076; opacity:1; font-family: Roboto,'Source Sans Pro', sans-serif; border-bottom: 0px none; text-decoration:none; }
 a:visited { color: #0a9076; opacity:0.6; font-family: Roboto,'Source Sans Pro', sans-serif; border-bottom: 0px none; text-decoration:none;} 
@@ -191,6 +203,7 @@ ul li.icon {display: none;}
 #slide-5{background:url("img/slide/Volcano.jpg") 0 no-repeat fixed;}
 #slide-6{background:url("img/slide/Fishing.jpg") 0 no-repeat fixed;}
 #slide-7{background:url("img/slide/Camp.jpg") 0 no-repeat fixed;}
+#slide-8{background:url("img/slide/Coast.jpg") 0 no-repeat fixed;}
 
 
 /*text box*/
@@ -235,6 +248,13 @@ ul li.icon {display: none;}
 #about p{ width:100%; height:auto; }
 #videos {text-align: center; margin: 0 auto;}
 
+.box-video {width: 400px; display:inline-block; margin: 0 auto; }
+#traditions {margin-right:80px;}
+.fb-share-video {}
+.fb-share-video a {padding-bottom:10px; clear:both; background-color: #0A9076; border: 0 none; border-radius:4px; color: white; cursor: pointer; display: inline-block; font-size:15px; height: 32px; line-height: 32px; margin: 10px 5px 10px 0; padding:0; padding-left:5px; padding-right:5px; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto;}
+.fb-share-video a:hover {background-color:#0DC3A0;font-size:16px;}
+
+
 .box-tour {
 	height:100%;
 	width:auto;
@@ -262,6 +282,14 @@ font-size: 16px;
 .fb-share a:hover {background-color:#0DC3A0;font-size:16px;}
 
 #mentions-legales {height: auto;background-image: url("img/background/content-bg-long.jpg");background-size:100% auto;background-repeat: repeat-y;}
+
+/* Tabs elements */
+.tabs-cell{display: table-cell;}
+#tabs-boxes {text-align:center; margin: 0 auto; width:880px;}
+#tabs {width: 400px;float:left;}
+#lessons{width: 400px;float:right;}
+#lessons a {padding-bottom:10px; clear:both; background-color: #0A9076; border: 0 none; border-radius:4px; color: white; cursor: pointer; display: inline-block; font-size:15px; height: 32px; line-height: 32px; margin: 10px 5px 10px 0; padding:0; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: 200px;}
+#lessons a:hover {background-color:#0DC3A0;font-size:16px;}
 
 /* Contact elements */
 #contact-boxes {text-align:center; margin: 0 auto; width:880px;}
@@ -404,6 +432,10 @@ figcaption {font-size:10px;text-align:center;}
 	#contact-fb,#contact-newsletter, #contact-other,#contact-boxes {width:100%;}
 	#social-contact img {height: 30px; width:30px; }
 	
+	/* Tabs/Lessons elements */
+	#tabs, #lessons, #tabs-boxes {width:100%;}
+	#social-contact img {height: 30px; width:30px; }
+	
 	#slide-1{background:url("img/slide/Wakatipu-mobile.jpg") 0 no-repeat fixed;}
 	#slide-2{background:url("img/slide/Mosquee-mobile.jpg") 0 no-repeat fixed;}
 	#slide-3{background:url("img/slide/Tongariro-mobile.jpg") 0 no-repeat fixed;}
@@ -411,6 +443,7 @@ figcaption {font-size:10px;text-align:center;}
 	#slide-5{background:url("img/slide/Volcano-mobile.jpg") 0 no-repeat fixed;}
 	#slide-6{background:url("img/slide/Fishing-mobile.jpg") 0 no-repeat fixed;}
 	#slide-7{background:url("img/slide/Camp-mobile.jpg") 0 no-repeat fixed;}
+	#slide-8{background:url("img/slide/Coast-mobile.jpg") 0 no-repeat fixed;}
 	
 	#mentions-legales {background-image: url("img/background/content-bg-mobile-long.jpg"); }
 	#about-me {background-image: url("img/background/content-bg-mobile-long.jpg");}
@@ -463,6 +496,9 @@ figcaption {font-size:10px;text-align:center;}
 	/* Contact elements */
 	#contact-fb,#contact-newsletter, #contact-other,#contact-boxes {width:280px;}
 	#social-contact img {height: 40px; width:40px; }
+	
+	/* Tabs/Lessons elements */
+	#tabs, #lessons, #tabs-boxes {width:280px;}
 
 	
 	#slide-1{background:url("img/slide/Wakatipu-mobile.jpg") 0 no-repeat fixed;}
@@ -472,6 +508,7 @@ figcaption {font-size:10px;text-align:center;}
 	#slide-5{background:url("img/slide/Volcano-mobile.jpg") 0 no-repeat fixed;}
 	#slide-6{background:url("img/slide/Fishing-mobile.jpg") 0 no-repeat fixed;}
 	#slide-7{background:url("img/slide/Camp-mobile.jpg") 0 no-repeat fixed;}
+	#slide-8{background:url("img/slide/Coast-mobile.jpg") 0 no-repeat fixed;}
 	
 	#mentions-legales {background-image: url("img/background/content-bg-mobile-long.jpg");}
 	#about-me {background-image: url("img/background/content-bg-mobile-long.jpg");}
@@ -521,6 +558,8 @@ figcaption {font-size:10px;text-align:center;}
 	#flickr, #pictures iframe{width:351px; height:233px;}
 	/* Contact elements */
 	#contact-fb,#contact-newsletter, #contact-other,#contact-boxes {width:300px;}
+	/* Tabs/Lessons elements */
+	#tabs, #lessons, #tabs-boxes {width:350px;}
 	/* Facebook Share button */
 	.fb-share {text-align:center;}
 }
@@ -536,4 +575,12 @@ figcaption {font-size:10px;text-align:center;}
 	
 	/* Contact elements */
 	#contact-fb,#contact-newsletter, #contact-other,#contact-boxes {width:400px;}
+	/* Tabs/Lessons elements */
+	#tabs, #lessons, #tabs-boxes {width:400px;}
+	
+	
 	}
+	
+	
+	
+	
