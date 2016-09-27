@@ -7,7 +7,7 @@
 		<!-- Basic Page Needs-->
         <title>Farid Ben Miles | Acoustic Guitarist | Cinematic World Fingerstyle</title>
 		<meta charset="utf-8" />
-		<meta name="description" content="With only the use of an acoustic guitar, he takes you in a “ travelling by ear ” experience. Includes bio, music, video, tour and photos.">
+		<meta name="description" content="With only the use of an acoustic guitar, Farid takes you in a “ travelling by ear ” experience. Includes bio, music, video, tour and photos.">
 		<!-- <meta name="keywords" content="Farid Ben Miles, Cinematic World Fingerstyle, acoustic, modern, fingerstyle, world music, cinematic music, fingerstyle music, guitar, guitarist, music, musician, folk, folk music, about, music, video, tour, contact, travel">-->
 		<meta name="copyright" content="Farid Ben Miles - 2016">
 		
@@ -16,7 +16,7 @@
 		<meta property="og:url" content="http://www.faridbenmiles.com">
 		<meta property="og:site_name" content="Farid Ben Miles - Cinematic World Fingerstyle">
 		<meta property="og:type" content=”website”>
-		<meta property="og:description" content="With only the use of an acoustic guitar, he takes you in a “ travelling by ear ” experience. Includes bio, music, video, tour and photos.">
+		<meta property="og:description" content="With only the use of an acoustic guitar, Farid takes you in a “ travelling by ear ” experience. Includes bio, music, video, tour and photos.">
 		<meta property="og:image" content="img/background/Farid-Ben-Miles-mobile.jpg">
 		
 
@@ -71,6 +71,134 @@
 			window.onload = jsUpdateSize;       // When the page first loads
 			window.onresize = jsUpdateSize;     // When the browser changes size
 		</script>
+		
+		<script>
+ 
+    /* Light YouTube Embeds by @labnol */
+    /* Web: http://labnol.org/?p=27941 */
+ 
+    document.addEventListener("DOMContentLoaded",
+        function() {
+            var div, n,
+                v = document.getElementsByClassName("youtube-player");
+            for (n = 0; n < v.length; n++) {
+                div = document.createElement("div");
+                div.setAttribute("data-id", v[n].dataset.id);
+                div.innerHTML = labnolThumb(v[n].dataset.id);
+                div.onclick = labnolIframe;
+                v[n].appendChild(div);
+            }
+        });
+ 
+    function labnolThumb(id) {
+        var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">',
+            play = '<div class="play"></div>';
+        return thumb.replace("ID", id) + play;
+    }
+ 
+    function labnolIframe() {
+        var iframe = document.createElement("iframe");
+        var embed = "https://www.youtube.com/embed/ID?autoplay=1";
+        iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+        iframe.setAttribute("frameborder", "0");
+        iframe.setAttribute("allowfullscreen", "1");
+        this.parentNode.replaceChild(iframe, this);
+    }
+ 
+</script>
+
+<script>
+ 
+    /* Light YouTube Embeds by @labnol */
+    /* Web: http://labnol.org/?p=27941 */
+ 
+    document.addEventListener("DOMContentLoaded",
+        function() {
+            var div, n,
+                v = document.getElementsByClassName("soundcloud-player");
+            for (n = 0; n < v.length; n++) {
+                div = document.createElement("div");
+                div.setAttribute("data-id", v[n].dataset.id);
+                div.innerHTML = labnolThumb(v[n].dataset.id);
+                div.onclick = labnolIframe;
+                v[n].appendChild(div);
+            }
+        });
+ 
+    function labnolThumb(id) {
+        var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">',
+            play = '<div class="play"></div>';
+        return thumb.replace("ID", id) + play;
+    }
+ 
+    function labnolIframe() {
+        var iframe = document.createElement("iframe");
+        var embed = "ID";
+        iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+        iframe.setAttribute("frameborder", "0");
+        iframe.setAttribute("allowfullscreen", "1");
+        this.parentNode.replaceChild(iframe, this);
+    }
+ 
+</script>
+
+<style>
+    .youtube-player {
+        position: relative;
+        padding-bottom: 56.23%;
+        /* Use 75% for 4:3 videos */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        background: #000;
+        margin: 5px;
+    }
+    
+    .youtube-player iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        background: transparent;
+    }
+    
+    .youtube-player img {
+        bottom: 0;
+        display: block;
+        left: 0;
+        margin: auto;
+        max-width: 100%;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border: none;
+        height: auto;
+        cursor: pointer;
+        -webkit-transition: .4s all;
+        -moz-transition: .4s all;
+        transition: .4s all;
+    }
+    
+    .youtube-player img:hover {
+        -webkit-filter: brightness(75%);
+    }
+    
+    .youtube-player .play {
+        height: 72px;
+        width: 72px;
+        left: 50%;
+        top: 50%;
+        margin-left: -36px;
+        margin-top: -36px;
+        position: absolute;
+        background: url("//i.imgur.com/TxzC70f.png") no-repeat;
+        cursor: pointer;
+    }
+ 
+</style>
     </head>
 	
 	<body>
@@ -118,7 +246,7 @@
 				<div id="traditions" class="box-video">
 					<h3>Traditions</h3>
 					<h4>A powerful song in the image of the importance of traditions</h4>
-					<div id="video"><iframe width="400" height="225" src="https://www.youtube.com/embed/_30K8Bei_iI" frameborder="0" allowfullscreen></iframe></div>
+					<div class="youtube-player" data-id="_30K8Bei_iI"></div>
 					<div class="fb-share-video">
 						<a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=https://www.youtube.com/watch?v=_30K8Bei_iI">Share on Facebook</a>
 					</div>
@@ -126,7 +254,7 @@
 				<div id="tradivan" class="box-video">
 					<h3>Tradivan (Caravan / Misirlou)</h3> 
 					<h4>A travel in the middle of Oriental culture and a musical history</h4>
-					<div id="video"><iframe width="400" height="225" src="https://www.youtube.com/embed/vXUznxv0qF0" frameborder="0" allowfullscreen></iframe></div>
+					<div class="youtube-player" data-id="vXUznxv0qF0"></div>
 					<div class="fb-share-video">
 						<a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=https://www.youtube.com/watch?v=_30K8Bei_iI">Share on Facebook</a>
 					</div>
@@ -172,13 +300,13 @@
 					<div id="bandcamp-player" class="players">
 						<h3>Album "Going Overseas" - Coming Soon</h3>
 						<p>I am happy to present you <br>a first track of my CD "<b>Going Overseas</b>".<br>The release date will be announced soon.</p><br>
-						<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/208868711&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+						<div class="soundcloud-player" data-id="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/208868711&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></div>
 						<!--<iframe scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/128342976%3Fsecret_token%3Ds-qesPa&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>-->
 					</div>
 					<div id="soundcloud-player" class="players">
 						<h3>Demos of the album "Going Overseas"</h3>
 						<p>The authentic demos of "<b>Going Overseas</b>" recorded during my travel (in my van, on the beach, at friends) + Bonus</p><br>
-						<iframe scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/128342976%3Fsecret_token%3Ds-qesPa&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+						<div class="soundcloud-player" data-id="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/128342976%3Fsecret_token%3Ds-qesPa&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></div>
 					</div>
 				</div>
 				
