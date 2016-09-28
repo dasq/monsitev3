@@ -328,7 +328,7 @@ font-size: 16px;
 
 
 /*Soundcloud player*/
-#player-container{margin:0 auto;text-align:center;width:880px;}
+#player-container{margin:0 auto;text-align:center;width:880px;z-index:-1}
 #music iframe{width:400px; height:450px; }
 .players {margin:0 auto; text-align:center;width:400px;float:left;}
 
@@ -368,6 +368,7 @@ padding-top:30px;
         max-width: 100%;
         background: transparent;
         margin: 5px;
+		z-index:0;
     }
 
 .iframe-container{height:450px; width:100%;}
@@ -378,6 +379,7 @@ padding-top:30px;
 	width: 100%;
 	background: transparent;
 	margin: 5px;
+	z-index:0;
 }
 /*#album-sc{background-image:url("img/208868711-sc.png");
 background-size:cover;}
