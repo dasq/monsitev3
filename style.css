@@ -366,7 +366,7 @@ padding-top:30px;
         height: 0;
         overflow: hidden;
         max-width: 100%;
-        background: #000;
+        background: transparent;
         margin: 5px;
     }
 
@@ -376,15 +376,15 @@ padding-top:30px;
 	height: 450px;
 	overflow: hidden;
 	width: 100%;
-	background: #000;
+	background: transparent;
 	margin: 5px;
 }
-#album-sc{background-image:url("img/208868711-sc.png");
+/*#album-sc{background-image:url("img/208868711-sc.png");
 background-size:cover;}
 #demos-sc {
 background-image:url("img/128342976-sc.png");
 background-size:cover;
-}
+}*/
 
 .youtube-player iframe, .soundcloud-player iframe {
 	position: absolute;
