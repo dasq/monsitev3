@@ -428,8 +428,12 @@ background-size:cover;
 	margin-left: -36px;
 	margin-top: -36px;
 	position: absolute;
-	background: url("img/play-button.png") no-repeat;
+	background: url("img/play-black.png") no-repeat ;
 	cursor: pointer;
+}
+
+.youtube-player .play:hover, .soundcloud-player .play:hover{
+	background: url("img/play.png") no-repeat ;
 }
 
 /* Page about me*/
@@ -498,7 +502,7 @@ figcaption {font-size:10px;text-align:center;}
 	#player-container,.players, #music iframe {width:200px;}
 	.players {clear:both; }
 	/* Video */
-	#videos iframe{width:220px; height:123.75px; }
+	.box-video{width:200px; }}
 	/*Flickr slider*/
 	#flickr, #pictures iframe{width:250px; height:166.5px;}
 	
@@ -563,7 +567,7 @@ figcaption {font-size:10px;text-align:center;}
 	#player-container,.players, #music iframe {width:250px;}
 	.players {clear:both; }
 	/* Video */
-	#videos iframe{width:250px; height:140.6px; }
+	.box-video{width:250px; }
 	/*Flickr slider*/
 	#flickr, #pictures iframe{width:250px; height:166.5px;}
 	
